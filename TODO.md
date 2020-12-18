@@ -1,0 +1,1 @@
+- Use Nuxt.js once it's Vue 3 based version is out
