@@ -7,13 +7,13 @@
         Setup for Windows
       </button>
     </router-link>
-    <a href="https://github.com/Soundux/Soundux/releases" target="_blank" rel="noopener">
+    <a href="https://flathub.org/apps/details/io.github.Soundux" target="_blank" rel="noopener">
       <button class="btn">
         <linux class="inline-block"/>
-        Download for Linux
+        Download for Linux (Flatpak)
       </button>
     </a>
-    <a href="https://aur.archlinux.org/packages/soundux-git/" target="_blank" rel="noopener">
+    <a href="https://aur.archlinux.org/packages/soundux/" target="_blank" rel="noopener">
       <button class="btn">
         <arch class="inline-block"/>
         Download for Arch Linux (AUR)
