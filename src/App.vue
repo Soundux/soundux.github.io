@@ -1,36 +1,13 @@
 <template>
-  <div class="flex my-5 justify-center">
-    <main class="flex flex-col justify-center mx-16 xl:mx-96">
-      <Banner/>
-      <hr />
-      <Features/>
-      <hr />
-      <FeatureList/>
-      <hr />
-      <Screenshots/>
-      <hr />
-      <Download />
-    </main>
-
-  </div>
+  <main class="flex flex-col justify-center my-5 mx-16 xl:mx-96">
+    <router-view/>
+  </main>
 </template>
 
 <script>
-import Banner from "./components/Banner.vue";
-import Features from "./components/Features.vue";
-import FeatureList from "./components/FeatureList.vue";
-import Screenshots from "./components/Screenshots.vue";
-import Download from "./components/Download.vue";
 
 export default {
   name: "App",
-  components: {
-    Download,
-    Screenshots,
-    FeatureList,
-    Banner,
-    Features
-  },
 };
 </script>
 

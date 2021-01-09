@@ -1,12 +1,12 @@
 <template>
   <h1 class="text-2xl mb-5 text-center" id="download">Download</h1>
   <div class="flex justify-center">
-    <a href="https://github.com/Soundux/Soundux/releases" target="_blank" rel="noopener">
+    <router-link to="/windowsSetup">
       <button class="btn">
         <microsoft-windows class="inline-block"/>
-        Download for Windows
+        Setup for Windows
       </button>
-    </a>
+    </router-link>
     <a href="https://github.com/Soundux/Soundux/releases" target="_blank" rel="noopener">
       <button class="btn">
         <linux class="inline-block"/>
