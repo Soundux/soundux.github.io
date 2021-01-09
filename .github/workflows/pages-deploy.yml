@@ -15,4 +15,4 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BUILD_DIR: dist/
-          BUILD_SCRIPT: yarn install && yarn build && touch dist/.nojekyll
+          BUILD_SCRIPT: yarn install && yarn build && touch dist/.nojekyll && cp dist/index.html dist/404.html
