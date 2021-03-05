@@ -7,11 +7,11 @@
           <v-list>
             <v-list-item>
               <v-list-item-content>
-                <v-list-item-title>
+                <v-list-item-title class="text-wrap">
                   <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
                   Discord asks me if I want to change my input device, what to do?
                 </v-list-item-title>
-                <v-list-item-subtitle>
+                <v-list-item-subtitle class="text-wrap">
                   <v-icon left color="primary">mdi-information-outline</v-icon>
                   Click on <kbd>Never ask again</kbd>
                 </v-list-item-subtitle>
@@ -20,11 +20,11 @@
 
             <v-list-item>
               <v-list-item-content>
-                <v-list-item-title>
+                <v-list-item-title class="text-wrap">
                   <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
                   Why is the audio quality in Discord so bad?
                 </v-list-item-title>
-                <v-list-item-subtitle>
+                <v-list-item-subtitle class="text-wrap">
                   <v-icon left color="primary">mdi-information-outline</v-icon>
                   Try disabling <kbd>Echo Cancellation</kbd> and <kbd>Noise Reduction</kbd> in Discord's
                   settings under <kbd>Voice & Video</kbd>
