@@ -110,7 +110,7 @@ export default Vue.extend({
   },
   computed: {
     selectedOS: {
-      get() {
+      get(): OperatingSystem {
         return this.$store.getters.selectedOS;
       },
       set(newValue: OperatingSystem) {
