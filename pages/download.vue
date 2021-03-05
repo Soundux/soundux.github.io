@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <v-card class="mt-3 pb-3" rounded>
+      <v-card class="mt-3 pb-3">
         <v-card-title class="text-h5">Download Soundux now</v-card-title>
         <v-card-text>
           <v-alert :value="!!error" text type="error" elevation="5" dense transition="scale-transition">
@@ -44,17 +44,38 @@
             <v-row justify="center" class="mt-5">
               <template v-if="$store.getters.selectedOS.name === 'Windows'">
                 <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowSetup" target="_self" width="230">
+                  <v-btn color="primary" x-large :href="windowSetup" target="_self" width="250">
                     <v-icon left>mdi-wizard-hat</v-icon>
                     <div>Download Setup</div>
                   </v-btn>
                 </v-col>
                 <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowsPortable" target="_self" width="230">
+                  <v-btn color="primary" x-large :href="windowsPortable" target="_self" width="250">
                     <v-icon left>mdi-briefcase-outline</v-icon>
                     <div>Download Portable</div>
                   </v-btn>
                 </v-col>
+                <v-alert type="info" class="text-center mt-3 mx-4" dense>
+                  We highly recommend you downloading the Setup as it automatically downloads and
+                  installs the required dependencies (WebView2 Runtime and VB-Cable).
+                </v-alert>
+                <v-alert outlined color="warning" elevation="5" dense transition="scale-transition">
+                  <h3 class="text-h5">Important!</h3>
+                  <div>
+                    Please click the button below for important information about Windows support
+                  </div>
+                  <v-row align="center" class="my-2">
+                    <v-spacer></v-spacer>
+                    <v-col class="shrink">
+                      <v-btn color="red" nuxt to="/windows-setup">
+                        <v-icon left>mdi-chevron-right</v-icon>
+                        Additional Setup steps
+                        <v-icon right>mdi-alert</v-icon>
+                      </v-btn>
+                    </v-col>
+                    <v-spacer></v-spacer>
+                  </v-row>
+                </v-alert>
               </template>
               <template v-else-if="$store.getters.selectedOS.name === 'macOS'">
                 <v-col cols="auto">
