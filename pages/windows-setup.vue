@@ -20,7 +20,11 @@
                 <v-card-text>
                   <div class="d-flex justify-end" :style="cardsWrapped ? '' : 'height: 508px'">
                     <div class="flex-grow-0 align-self-end">
-                      <img src="screenshots/windows-recording-devices.png" alt="Recording devices" />
+                      <img
+                        src="screenshots/windows-recording-devices.png"
+                        alt="Recording devices"
+                        style="max-width: 100%"
+                      />
                     </div>
                   </div>
                 </v-card-text>
@@ -34,7 +38,11 @@
                   <kbd>CABLE Input</kbd> under <kbd>Playback through this device</kbd>
                 </v-card-subtitle>
                 <v-card-text>
-                  <img src="screenshots/windows-mic-properties.png" alt="Mic properties" />
+                  <img
+                    src="screenshots/windows-mic-properties.png"
+                    alt="Mic properties"
+                    style="max-width: 100%"
+                  />
                 </v-card-text>
               </v-card>
             </v-col>
