@@ -1,0 +1,154 @@
+<template>
+  <v-row justify="center" align="center">
+    <v-col cols="12" sm="8" md="6">
+      <v-card class="mt-3 pb-3" rounded>
+        <v-card-title class="text-h5">Download Soundux now</v-card-title>
+        <v-card-text>
+          <template v-if="latestRelease">
+            <span class="text-h6">Latest version: {{ latestRelease.tag_name }}</span>
+            <br />
+            <span class="text-h6">Released on {{ latestRelease.published_at }}</span>
+          </template>
+          <v-skeleton-loader v-else type="article, actions"></v-skeleton-loader>
+
+          <template v-if="$store.getters.selectedOS">
+            <div v-if="$store.getters.selectedOS.name === 'macOS'" class="mt-5">
+              Soundux is currently not supported on your operating system
+            </div>
+            <div v-else class="mt-5">
+              Soundux is offered as different flavors for your operating system
+            </div>
+            <div>If we have detected the wrong operating system just change it on the top right.</div>
+
+            <v-row justify="center" class="mt-5">
+              <template v-if="$store.getters.selectedOS.name === 'Windows'">
+                <v-col cols="auto">
+                  <v-btn color="primary" x-large :href="windowSetup" target="_self" width="230">
+                    <v-icon left>mdi-wizard-hat</v-icon>
+                    <div>Download Setup</div>
+                  </v-btn>
+                </v-col>
+                <v-col cols="auto">
+                  <v-btn color="primary" x-large :href="windowsPortable" target="_self" width="230">
+                    <v-icon left>mdi-briefcase-outline</v-icon>
+                    <div>Download Portable</div>
+                  </v-btn>
+                </v-col>
+              </template>
+              <template v-else-if="$store.getters.selectedOS.name === 'macOS'">
+                <v-col cols="auto">
+                  <v-btn class="text-none" :disabled="true" color="primary" x-large>
+                    <v-icon left>mdi-download</v-icon>
+                    <div>Download for macOS<br />(coming soon™)</div>
+                  </v-btn>
+                </v-col>
+              </template>
+              <template v-else>
+                <v-col cols="auto">
+                  <v-row justify="center" class="mb-3">
+                    <a href="https://flathub.org/apps/details/io.github.Soundux" target="_blank">
+                      <img
+                        width="240"
+                        alt="Download on Flathub"
+                        :src="`https://flathub.org/assets/badges/flathub-badge${
+                          $vuetify.theme.dark ? '' : '-i'
+                        }-en.png`"
+                      />
+                    </a>
+                  </v-row>
+                  <v-row justify="center">
+                    <v-btn
+                      color="primary"
+                      x-large
+                      width="250"
+                      href="https://aur.archlinux.org/packages/soundux/"
+                      target="_blank"
+                    >
+                      <v-icon left>mdi-arch</v-icon>
+                      <div>Download from AUR</div>
+                    </v-btn>
+                  </v-row>
+                </v-col>
+              </template>
+            </v-row>
+          </template>
+
+          <details v-if="latestRelease">
+            <summary role="button" class="text-h6 cursor-pointer mt-6">Changelog</summary>
+            <RenderMarkdown :source="latestRelease.body" :options="{ html: true }" />
+          </details>
+        </v-card-text>
+      </v-card>
+
+      <v-card class="mt-3 pb-3" rounded>
+        <v-card-title class="text-h5">Old versions</v-card-title>
+        <v-card-text>
+          If you have problems with the latest version they might not occur in an old version. You can
+          try out older versions here:
+          <v-list v-if="oldReleases.length > 0" class="text-center">
+            <v-list-item v-for="release in oldReleases" :key="release.id">
+              <v-list-item-content>
+                <v-list-item-title>
+                  <a :href="release.html_url" target="_blank">Version {{ release.tag_name }}</a>
+                </v-list-item-title>
+                <v-list-item-subtitle class="text-wrap">
+                  Released on {{ release.published_at }}
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+          <v-skeleton-loader
+            v-else
+            type="list-item-two-line, list-item-two-line, list-item-two-line"
+          ></v-skeleton-loader>
+        </v-card-text>
+      </v-card>
+    </v-col>
+  </v-row>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+import { GithubRelease } from '~/types/github';
+
+export default Vue.extend({
+  name: 'Download',
+  data() {
+    return {
+      releases: [] as GithubRelease[],
+    };
+  },
+  computed: {
+    latestRelease(): GithubRelease {
+      return this.releases[0];
+    },
+    oldReleases(): GithubRelease[] {
+      return this.releases.slice(1, this.releases.length);
+    },
+    windowSetup(): string {
+      if (this.latestRelease) {
+        const asset = this.latestRelease.assets.find(({ name }) => name.includes('windows-setup'));
+        if (asset) {
+          return asset.browser_download_url;
+        }
+      }
+      return 'https://github.com/Soundux/Soundux/releases/latest';
+    },
+    windowsPortable(): string {
+      if (this.latestRelease) {
+        const asset = this.latestRelease.assets.find(({ name }) => name.includes('windows-portable'));
+        if (asset) {
+          return asset.browser_download_url;
+        }
+      }
+      return 'https://github.com/Soundux/Soundux/releases/latest';
+    },
+  },
+  async mounted() {
+    const gitHubData = await fetch(`https://api.github.com/repos/Soundux/Soundux/releases`);
+    if (gitHubData) {
+      this.releases = await gitHubData.json();
+    }
+  },
+});
+</script>

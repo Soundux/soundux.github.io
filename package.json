@@ -3,20 +3,34 @@
   "license": "GPL-3.0-only",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore ."
   },
   "dependencies": {
-    "mdue": "^0.1.4",
-    "vue": "^3.0.5",
-    "vue-router": "^4.0.2"
+    "@mdi/font": "^5.9.55",
+    "core-js": "^3.9.1",
+    "markdown-it": "^12.0.4",
+    "nuxt": "^2.15.2",
+    "nuxt-i18n": "^6.20.4",
+    "roboto-fontface": "*"
   },
   "devDependencies": {
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@vue/compiler-sfc": "^3.0.5",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "vite": "^1.0.0-rc.13"
+    "@nuxt/types": "^2.15.2",
+    "@nuxt/typescript-build": "^2.0.6",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "@types/markdown-it": "^12.0.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.7.0",
+    "prettier": "^2.2.1"
   }
 }
