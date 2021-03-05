@@ -21,7 +21,7 @@
                   <div class="d-flex justify-end" :style="cardsWrapped ? '' : 'height: 508px'">
                     <div class="flex-grow-0 align-self-end">
                       <img
-                        src="screenshots/windows-recording-devices.png"
+                        src="/screenshots/windows-recording-devices.png"
                         alt="Recording devices"
                         style="max-width: 100%"
                       />
@@ -39,7 +39,7 @@
                 </v-card-subtitle>
                 <v-card-text>
                   <img
-                    src="screenshots/windows-mic-properties.png"
+                    src="/screenshots/windows-mic-properties.png"
                     alt="Mic properties"
                     style="max-width: 100%"
                   />
