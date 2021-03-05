@@ -4,6 +4,27 @@
       <v-card class="mt-3 pb-3" rounded>
         <v-card-title class="text-h5">Download Soundux now</v-card-title>
         <v-card-text>
+          <v-alert :value="!!error" text type="error" elevation="5" dense transition="scale-transition">
+            <h3 class="text-h5">Failed to fetch information from GitHub</h3>
+            <div>
+              {{ error }}
+            </div>
+            <v-divider class="my-4"></v-divider>
+            <v-row align="center" no-gutters>
+              <v-spacer></v-spacer>
+              <v-col class="shrink">
+                <v-btn
+                  color="orange darken-3"
+                  href="https://github.com/Soundux/Soundux/releases"
+                  target="_blank"
+                >
+                  Visit our GitHub
+                </v-btn>
+              </v-col>
+              <v-spacer></v-spacer>
+            </v-row>
+          </v-alert>
+
           <template v-if="latestRelease">
             <span class="text-h6">Latest version: {{ latestRelease.tag_name }}</span>
             <br />
@@ -116,6 +137,7 @@ export default Vue.extend({
   data() {
     return {
       releases: [] as GithubRelease[],
+      error: '',
     };
   },
   computed: {
@@ -145,9 +167,14 @@ export default Vue.extend({
     },
   },
   async mounted() {
-    const gitHubData = await fetch(`https://api.github.com/repos/Soundux/Soundux/releases`);
-    if (gitHubData) {
-      this.releases = await gitHubData.json();
+    try {
+      const gitHubData = await fetch(`https://api.github.com/repos/Soundux/Soundux/releases`);
+      if (gitHubData) {
+        this.releases = await gitHubData.json();
+      }
+    } catch (error) {
+      console.error(error);
+      this.error = error.message;
     }
   },
 });
