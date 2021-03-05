@@ -16,7 +16,11 @@ const config: NuxtConfig = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A cross-platform soundboard' },
+      {
+        property: 'og:image',
+        content: 'https://raw.githubusercontent.com/Soundux/Soundux/master/assets/icon.png',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
