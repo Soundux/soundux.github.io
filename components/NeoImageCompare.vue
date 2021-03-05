@@ -98,7 +98,6 @@ export default Vue.extend({
       this.dragActive = true;
     },
     drag(event: MouseEvent) {
-      // try layerX
       this.posX = event.offsetX;
     },
     mouseLeave() {
