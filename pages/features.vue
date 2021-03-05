@@ -2,7 +2,10 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <v-card class="mt-3">
-        <v-card-title class="text-h5">Features</v-card-title>
+        <v-card-title class="text-h5">
+          <v-icon left>mdi-star-circle-outline</v-icon>
+          Features
+        </v-card-title>
         <v-card-text>
           <p>Click on the different features to reveal additional information about them</p>
           <v-list nav dense>

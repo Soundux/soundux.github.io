@@ -2,7 +2,10 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <v-card class="mt-3 pb-3" rounded>
-        <v-card-title class="text-h5">Frequently asked questions</v-card-title>
+        <v-card-title class="text-h5">
+          <v-icon left>mdi-frequently-asked-questions</v-icon>
+          Frequently asked questions
+        </v-card-title>
         <v-card-text>
           <v-list>
             <v-list-item>

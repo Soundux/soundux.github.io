@@ -2,7 +2,10 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <v-card class="mt-3 pb-3">
-        <v-card-title class="text-h5">Download Soundux now</v-card-title>
+        <v-card-title class="text-h5">
+          <v-icon left>mdi-download</v-icon>
+          Download Soundux now
+        </v-card-title>
         <v-card-text>
           <v-alert :value="!!error" text type="error" elevation="5" dense transition="scale-transition">
             <h3 class="text-h5">Failed to fetch information from GitHub</h3>
