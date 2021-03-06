@@ -106,6 +106,7 @@ export default Vue.extend({
         },
       ],
       miniVariant: true,
+      darkMediaQuery: null as MediaQueryList | null,
     };
   },
   computed: {
@@ -119,19 +120,22 @@ export default Vue.extend({
     },
   },
   mounted() {
-    const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    if (window.matchMedia) {
+      this.darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-    if (!localStorage.getItem('theme')) {
-      localStorage.setItem('theme', darkString(darkMediaQuery.matches));
-      // console.log('theme not set, set to browser setting', localStorage.getItem('theme'));
+      if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', darkString(this.darkMediaQuery.matches));
+        // console.log('theme not set, set to browser setting', localStorage.getItem('theme'));
+      }
+
+      if (this.darkMediaQuery.addEventListener) {
+        this.darkMediaQuery.addEventListener('change', this.mediaQueryChange);
+      } else if (this.darkMediaQuery.addListener) {
+        this.darkMediaQuery.addListener(this.mediaQueryChange);
+      }
+    } else {
+      localStorage.setItem('theme', darkString(true));
     }
-    darkMediaQuery.addEventListener('change', event => {
-      const { matches } = event;
-      this.$vuetify.theme.dark = matches;
-      localStorage.setItem('theme', darkString(matches));
-      // console.log('dark theme changed', matches);
-    });
-
     // setTimeout(() => (this.$vuetify.theme.dark = darkTheme), 0);
     this.$vuetify.theme.dark = isDark(localStorage.getItem('theme'));
 
@@ -144,7 +148,22 @@ export default Vue.extend({
       this.selectedOS = this.operatingSystems[2];
     }
   },
+  beforeDestroy() {
+    if (this.darkMediaQuery) {
+      if (this.darkMediaQuery.removeEventListener) {
+        this.darkMediaQuery.removeEventListener('change', this.mediaQueryChange);
+      } else if (this.darkMediaQuery.removeListener) {
+        this.darkMediaQuery.removeListener(this.mediaQueryChange);
+      }
+    }
+  },
   methods: {
+    mediaQueryChange(event: MediaQueryListEvent) {
+      const { matches } = event;
+      this.$vuetify.theme.dark = matches;
+      localStorage.setItem('theme', darkString(matches));
+      // console.log('dark theme changed', matches);
+    },
     darkThemeChanged(state: boolean) {
       localStorage.setItem('theme', darkString(state));
       // console.log('theme manually set dark', state);
