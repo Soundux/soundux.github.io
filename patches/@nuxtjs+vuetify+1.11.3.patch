@@ -1,0 +1,20 @@
+diff --git a/node_modules/@nuxtjs/vuetify/dist/options.d.ts b/node_modules/@nuxtjs/vuetify/dist/options.d.ts
+index a850495..e1f4ae4 100644
+--- a/node_modules/@nuxtjs/vuetify/dist/options.d.ts
++++ b/node_modules/@nuxtjs/vuetify/dist/options.d.ts
+@@ -1,5 +1,5 @@
+ import { SFCDescriptor } from 'vue-template-compiler';
+-import { VuetifyPreset } from 'vuetify/types/services/presets';
++import { UserVuetifyPreset } from 'vuetify/types/services/presets';
+ import { ModuleThis } from '@nuxt/types/config/module';
+ import { FontOptions } from './font';
+ import { IconPreset } from './icons';
+@@ -17,7 +17,7 @@ export interface VuetifyLoaderOptions {
+         component: SFCDescriptor;
+     }): [string, string] | undefined;
+ }
+-export interface Options extends Partial<VuetifyPreset> {
++export interface Options extends Omit<UserVuetifyPreset, 'preset'> {
+     customVariables?: string[];
+     defaultAssets?: {
+         font?: FontOptions;

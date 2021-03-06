@@ -54,11 +54,9 @@ const config: NuxtConfig = {
     theme: {
       dark: true,
       themes: {
-        // @ts-ignore TODO: wait for https://github.com/nuxt-community/vuetify-module/pull/419
         dark: {
           primary: '#52b18c',
         },
-        // @ts-ignore
         light: {
           primary: '#52b18c',
         },
