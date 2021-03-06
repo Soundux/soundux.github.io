@@ -6,6 +6,9 @@ const config: NuxtConfig = {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  // Define the source directory of your Nuxt.js application: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-srcdir/
+  srcDir: 'src',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     // titleTemplate: '%s - soundux.github.io',
