@@ -40,7 +40,7 @@
         @change="darkThemeChanged"
       ></v-switch>
       <div class="ml-3" style="width: 150px">
-        <NoSsr>
+        <ClientOnly>
           <v-select
             v-model="selectedOS"
             return-object
@@ -59,7 +59,7 @@
               {{ item.name }}
             </template>
           </v-select>
-        </NoSsr>
+        </ClientOnly>
       </div>
     </v-app-bar>
     <v-main>
