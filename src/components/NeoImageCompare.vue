@@ -2,14 +2,14 @@
   <div class="image-compare">
     <div ref="container" :style="containerStyle" draggable="true">
       <div class="image-container" :style="imageContainerAfterStyle" draggable="true">
-        <img :style="imageStyle" src="/screenshots/dark.png" alt="After" />
+        <img :style="imageStyle" :src="rightImgSrc" alt="After" />
       </div>
       <div
         :class="{ smooth: !dragActive, 'image-container': true }"
         :style="imageContainerBeforeStyle"
         draggable="true"
       >
-        <img :style="imageStyle" src="/screenshots/light.png" alt="Before" />
+        <img :style="imageStyle" :src="leftImgSrc" alt="Before" />
       </div>
       <div :class="{ smooth: !dragActive, slider: true }" :style="sliderStyle" draggable="true"></div>
     </div>
@@ -17,15 +17,28 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
 
 // heavily inspired by Dev Ed: https://youtu.be/ee8y1IV6pOI
-// TODO: make this component more flexible
+// TODO: make setting this.width more flexible
 export default Vue.extend({
   name: 'NeoImageCompare',
+  props: {
+    leftImgSrc: {
+      type: String,
+      required: true,
+    },
+    rightImgSrc: {
+      type: String,
+      required: true,
+    },
+    aspectRatio: {
+      type: Object as PropType<{ width: number; height: number }>,
+      required: true,
+    },
+  },
   data() {
     return {
-      aspectRatio: { width: 440, height: 261 },
       width: 0,
       height: 0,
       posX: 0,

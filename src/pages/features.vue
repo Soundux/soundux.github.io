@@ -20,7 +20,11 @@
               </template>
               <v-list-item>
                 <v-list-item-content>
-                  <NeoImageCompare></NeoImageCompare>
+                  <NeoImageCompare
+                    left-img-src="/screenshots/light.png"
+                    right-img-src="/screenshots/dark.png"
+                    :aspect-ratio="{ width: 440, height: 261 }"
+                  ></NeoImageCompare>
                   <v-col class="text-center">
                     <v-list-item-subtitle class="text-wrap">Pick your poison 👀</v-list-item-subtitle>
                   </v-col>
