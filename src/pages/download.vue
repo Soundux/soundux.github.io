@@ -101,16 +101,21 @@
                       />
                     </a>
                   </v-row>
-                  <v-row justify="center">
+                  <v-row justify="center" class="mb-3">
                     <v-btn
                       color="primary"
                       x-large
-                      width="250"
                       href="https://aur.archlinux.org/packages/soundux/"
                       target="_blank"
                     >
                       <v-icon left>mdi-arch</v-icon>
                       <div>Download from AUR</div>
+                    </v-btn>
+                  </v-row>
+                  <v-row justify="center">
+                    <v-btn color="primary" x-large :href="debPackage">
+                      <v-icon left>mdi-debian</v-icon>
+                      <div>Download DEB (Ubuntu 20.04+ / Debian sid)</div>
                     </v-btn>
                   </v-row>
                 </v-col>
@@ -183,6 +188,15 @@ export default Vue.extend({
     windowsPortable(): string {
       if (this.latestRelease) {
         const asset = this.latestRelease.assets.find(({ name }) => name.includes('windows-portable'));
+        if (asset) {
+          return asset.browser_download_url;
+        }
+      }
+      return 'https://github.com/Soundux/Soundux/releases/latest';
+    },
+    debPackage(): string {
+      if (this.latestRelease) {
+        const asset = this.latestRelease.assets.find(({ name }) => name.includes('.deb'));
         if (asset) {
           return asset.browser_download_url;
         }
