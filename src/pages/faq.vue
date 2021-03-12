@@ -34,6 +34,27 @@
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
+
+            <v-list-item v-if="$store.getters.selectedOS && $store.getters.selectedOS.name === 'Linux'">
+              <v-list-item-content>
+                <v-list-item-title class="text-wrap">
+                  <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
+                  When I try to pass-through an application it fails
+                </v-list-item-title>
+                <v-list-item-subtitle class="text-wrap">
+                  <div class="mb-2">
+                    <v-icon left color="primary">mdi-information-outline</v-icon>
+                    Some apps use OpenAL for audio which may prevent this. To solve this create a file
+                    named
+                    <code>.alsoftrc</code> in your home folder with the following contents:
+                  </div>
+                  <pre style="white-space: pre-line">
+                    [pulse]
+                    allow-moves=yes
+                  </pre>
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
           </v-list>
           <div class="text-center">more to come...</div>
         </v-card-text>
