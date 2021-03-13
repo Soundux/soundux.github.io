@@ -22,7 +22,7 @@ const config: NuxtConfig = {
       { hid: 'description', name: 'description', content: 'A cross-platform soundboard' },
       {
         property: 'og:image',
-        content: 'https://raw.githubusercontent.com/Soundux/Soundux/master/assets/icon.png',
+        content: 'https://raw.githubusercontent.com/Soundux/Soundux/master/assets/soundux.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
