@@ -122,7 +122,7 @@
                   <v-row justify="center">
                     <v-btn color="primary" x-large :href="debPackage">
                       <v-icon left>mdi-debian</v-icon>
-                      <div>Download DEB (Ubuntu 20.04+ / Debian sid)</div>
+                      <div>Download DEB</div>
                     </v-btn>
                   </v-row>
                   <v-row justify="center" class="mb-3">For Ubuntu 20.04+ / Debian sid</v-row>
