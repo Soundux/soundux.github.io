@@ -118,6 +118,14 @@
                       <div>Download DEB (Ubuntu 20.04+ / Debian sid)</div>
                     </v-btn>
                   </v-row>
+                  <v-row justify="center" class="mb-3">For Ubuntu 20.04+ / Debian sid</v-row>
+                  <v-row justify="center">
+                    <v-btn color="primary" x-large :href="rpmPackage">
+                      <v-icon left>mdi-fedora</v-icon>
+                      <div>Download RPM</div>
+                    </v-btn>
+                  </v-row>
+                  <v-row justify="center" class="">For Fedora 33</v-row>
                 </v-col>
               </template>
             </v-row>
@@ -196,7 +204,16 @@ export default Vue.extend({
     },
     debPackage(): string {
       if (this.latestRelease) {
-        const asset = this.latestRelease.assets.find(({ name }) => name.includes('.deb'));
+        const asset = this.latestRelease.assets.find(({ name }) => name.endsWith('.deb'));
+        if (asset) {
+          return asset.browser_download_url;
+        }
+      }
+      return 'https://github.com/Soundux/Soundux/releases/latest';
+    },
+    rpmPackage(): string {
+      if (this.latestRelease) {
+        const asset = this.latestRelease.assets.find(({ name }) => name.endsWith('.rpm'));
         if (asset) {
           return asset.browser_download_url;
         }
