@@ -62,7 +62,14 @@
                   We highly recommend you downloading the Setup as it automatically downloads and
                   installs the required dependencies (WebView2 Runtime and VB-Cable).
                 </v-alert>
-                <v-alert outlined color="warning" elevation="5" dense transition="scale-transition">
+                <v-alert
+                  outlined
+                  color="warning"
+                  elevation="5"
+                  dense
+                  transition="scale-transition"
+                  class="mx-5"
+                >
                   <h3 class="text-h5">Important!</h3>
                   <div>
                     Please click the button below for important information about Windows support
