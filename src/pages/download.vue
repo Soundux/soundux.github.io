@@ -40,7 +40,7 @@
               Soundux is currently not supported on your operating system
             </div>
             <div v-else class="mt-5">
-              Soundux is offered as different flavors for your operating system
+              Soundux is offered as different flavors for your operating system.
             </div>
             <div>If we have detected the wrong operating system just change it on the top right.</div>
 
@@ -97,7 +97,7 @@
               </template>
               <template v-else>
                 <v-col cols="auto">
-                  <v-row justify="center" class="mb-3">
+                  <v-row justify="center">
                     <a href="https://flathub.org/apps/details/io.github.Soundux" target="_blank">
                       <img
                         width="240"
@@ -108,7 +108,8 @@
                       />
                     </a>
                   </v-row>
-                  <v-row justify="center" class="mb-3">
+                  <v-row justify="center" class="mb-3">For all distros with Flatpak support</v-row>
+                  <v-row justify="center">
                     <v-btn
                       color="primary"
                       x-large
@@ -116,9 +117,10 @@
                       target="_blank"
                     >
                       <v-icon left>mdi-arch</v-icon>
-                      <div>Download from AUR</div>
+                      <div>Download AUR</div>
                     </v-btn>
                   </v-row>
+                  <v-row justify="center" class="mb-3">For Arch Linux</v-row>
                   <v-row justify="center">
                     <v-btn color="primary" x-large :href="debPackage">
                       <v-icon left>mdi-debian</v-icon>
