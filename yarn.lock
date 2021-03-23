@@ -3931,6 +3931,16 @@ eslint-plugin-vue@^7.1.0, eslint-plugin-vue@^7.7.0:
     semver "^7.3.2"
     vue-eslint-parser "^7.6.0"
 
+eslint-plugin-vue@^7.8.0:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.8.0.tgz#cb0e85d65b65fa8d15e783fbb03c049d2c4cfdae"
+  integrity sha512-OGrnPz+PuYL2HmVyBHxm4mRjxW2kfFCQE6Hw9G6qOHs/Pcu0srOlCCW0FMa8SLzIEqxl8WuKoBSPcMnrjUG2vw==
+  dependencies:
+    eslint-utils "^2.1.0"
+    natural-compare "^1.4.0"
+    semver "^7.3.2"
+    vue-eslint-parser "^7.6.0"
+
 eslint-scope@5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.0.tgz#d0f971dfe59c69e0cada684b23d49dbf82600ce5"
@@ -6143,10 +6153,10 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-i18n@^6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.21.0.tgz#93d17ab7bd3580344ee404889432ef12bc5e9c8e"
-  integrity sha512-L8MOuhVEbLxPOo6sjUZp6CaKBM+F3vkcGAhcS1+bva3YriJxa3KWPwrb1dvUccXFB46hYw4PnZ7pw8s776CLgg==
+nuxt-i18n@^6.21.1:
+  version "6.21.1"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.21.1.tgz#a69d581a870b8eac1d5b2f8812b92a41fbe29708"
+  integrity sha512-zjqqUMJgIDDxrJDO5Ot3s8F1y71A4otTyGyf/RmQHptfY1HpvqwFx8087p5vUOI9XoRsGHSYB4n4wcMxurw+qA==
   dependencies:
     "@babel/parser" "^7.5.5"
     "@babel/traverse" "^7.5.5"
