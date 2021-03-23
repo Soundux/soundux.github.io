@@ -47,13 +47,13 @@
             <v-row justify="center" class="mt-5">
               <template v-if="$store.getters.selectedOS.name === 'Windows'">
                 <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowSetup" target="_self" width="250">
+                  <v-btn color="primary" x-large :href="windowSetup" width="250">
                     <v-icon left>mdi-wizard-hat</v-icon>
                     <div>Download Setup</div>
                   </v-btn>
                 </v-col>
                 <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowsPortable" target="_self" width="250">
+                  <v-btn color="primary" x-large :href="windowsPortable" width="250">
                     <v-icon left>mdi-briefcase-outline</v-icon>
                     <div>Download Portable</div>
                   </v-btn>
@@ -96,46 +96,56 @@
                 </v-col>
               </template>
               <template v-else>
-                <v-col cols="auto">
-                  <v-row justify="center">
-                    <a href="https://flathub.org/apps/details/io.github.Soundux" target="_blank">
-                      <img
-                        width="240"
-                        alt="Download on Flathub"
-                        :src="`https://flathub.org/assets/badges/flathub-badge${
-                          $vuetify.theme.dark ? '' : '-i'
-                        }-en.png`"
-                      />
-                    </a>
-                  </v-row>
-                  <v-row justify="center" class="mb-3">For all distros with Flatpak support</v-row>
-                  <v-row justify="center">
-                    <v-btn
-                      color="primary"
-                      x-large
-                      href="https://aur.archlinux.org/packages/soundux/"
-                      target="_blank"
-                    >
-                      <v-icon left>mdi-arch</v-icon>
-                      <div>Download AUR</div>
-                    </v-btn>
-                  </v-row>
-                  <v-row justify="center" class="mb-3">For Arch Linux</v-row>
-                  <v-row justify="center">
-                    <v-btn color="primary" x-large :href="debPackage">
-                      <v-icon left>mdi-debian</v-icon>
-                      <div>Download DEB</div>
-                    </v-btn>
-                  </v-row>
-                  <v-row justify="center" class="mb-3">For Ubuntu 20.04+ / Debian sid</v-row>
-                  <v-row justify="center">
-                    <v-btn color="primary" x-large :href="rpmPackage">
-                      <v-icon left>mdi-fedora</v-icon>
-                      <div>Download RPM</div>
-                    </v-btn>
-                  </v-row>
-                  <v-row justify="center" class="">For Fedora 33</v-row>
-                </v-col>
+                <v-row justify="center">
+                  <v-col cols="auto">
+                    <v-row justify="center" no-gutters dense>
+                      <a href="https://flathub.org/apps/details/io.github.Soundux" target="_blank">
+                        <img
+                          width="240"
+                          alt="Download on Flathub"
+                          :src="`https://flathub.org/assets/badges/flathub-badge${
+                            $vuetify.theme.dark ? '' : '-i'
+                          }-en.png`"
+                        />
+                      </a>
+                    </v-row>
+                    <v-row justify="center" dense>For all distros with Flatpak support</v-row>
+                  </v-col>
+                </v-row>
+                <v-row justify="center">
+                  <v-col cols="auto">
+                    <v-row justify="center" no-gutters dense>
+                      <v-btn
+                        color="primary"
+                        x-large
+                        href="https://aur.archlinux.org/packages/soundux/"
+                        target="_blank"
+                      >
+                        <v-icon left>mdi-arch</v-icon>
+                        <div>Download AUR</div>
+                      </v-btn>
+                    </v-row>
+                    <v-row justify="center" dense>For Arch Linux</v-row>
+                  </v-col>
+                  <v-col cols="auto">
+                    <v-row justify="center" no-gutters dense>
+                      <v-btn color="primary" x-large :href="debPackage">
+                        <v-icon left>mdi-debian</v-icon>
+                        <div>Download DEB</div>
+                      </v-btn>
+                    </v-row>
+                    <v-row justify="center" dense>For Ubuntu 20.04+ / Debian sid</v-row>
+                  </v-col>
+                  <v-col cols="auto">
+                    <v-row justify="center" no-gutters dense>
+                      <v-btn color="primary" x-large :href="rpmPackage">
+                        <v-icon left>mdi-fedora</v-icon>
+                        <div>Download RPM</div>
+                      </v-btn>
+                    </v-row>
+                    <v-row justify="center" dense>For Fedora 33</v-row>
+                  </v-col>
+                </v-row>
               </template>
             </v-row>
           </template>
