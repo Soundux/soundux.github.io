@@ -44,9 +44,11 @@
       <div class="text-center my-5">
         <v-carousel cycle show-arrows-on-hover>
           <v-carousel-item
-            v-for="screenshot in 8"
+            v-for="screenshot in screenshots"
             :key="screenshot"
-            :src="`screenshots/${screenshot}.png`"
+            :src="`https://raw.githubusercontent.com/Soundux/screenshots/screenshots/${screenshot}${
+              $vuetify.theme.dark ? '-dark' : '-light'
+            }.png`"
           >
           </v-carousel-item>
         </v-carousel>
@@ -59,5 +61,11 @@
 <script lang="ts">
 import Vue from 'vue';
 
-export default Vue.extend({});
+export default Vue.extend({
+  data() {
+    return {
+      screenshots: ['playing', 'grid-view', 'multiple-playing', 'pass-through', 'search', 'settings'],
+    };
+  },
+});
 </script>

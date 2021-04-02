@@ -21,9 +21,9 @@
               <v-list-item>
                 <v-list-item-content>
                   <NeoImageCompare
-                    left-img-src="/screenshots/light.png"
-                    right-img-src="/screenshots/dark.png"
-                    :aspect-ratio="{ width: 440, height: 261 }"
+                    left-img-src="https://raw.githubusercontent.com/Soundux/screenshots/screenshots/home-light.png"
+                    right-img-src="https://raw.githubusercontent.com/Soundux/screenshots/screenshots/home-dark.png"
+                    :aspect-ratio="{ width: 1360, height: 795 }"
                   ></NeoImageCompare>
                   <v-col class="text-center">
                     <v-list-item-subtitle class="text-wrap">Pick your poison 👀</v-list-item-subtitle>
@@ -73,7 +73,7 @@
                   <v-list-item-subtitle class="text-wrap">
                     <v-col class="text-center">
                       <img
-                        :src="`/screenshots/media-controls-${
+                        :src="`https://raw.githubusercontent.com/Soundux/screenshots/screenshots/media-controls-${
                           $vuetify.theme.dark ? 'dark' : 'light'
                         }.png`"
                         alt="Media controls"
@@ -122,7 +122,9 @@
                   <v-list-item-subtitle class="text-wrap">
                     <v-col class="text-center">
                       <img
-                        :src="`/screenshots/search-${$vuetify.theme.dark ? 'dark' : 'light'}.png`"
+                        :src="`https://raw.githubusercontent.com/Soundux/screenshots/screenshots/search-${
+                          $vuetify.theme.dark ? 'dark' : 'light'
+                        }.png`"
                         alt="Search"
                         width="100%"
                       />
@@ -167,13 +169,14 @@
                 <v-list-item-content>
                   <v-list-item-subtitle class="text-wrap">
                     <v-col class="text-center">
-                      <img
-                        :src="`/screenshots/app-pass-through-${
-                          $vuetify.theme.dark ? 'dark' : 'light'
-                        }.png`"
-                        alt="App pass through"
-                        width="30%"
-                      />
+                      <figure style="height: 225px; overflow: hidden">
+                        <img
+                          :src="`https://raw.githubusercontent.com/Soundux/screenshots/screenshots/pass-through-drawer-${
+                            $vuetify.theme.dark ? 'dark' : 'light'
+                          }.png`"
+                          alt="App pass through"
+                        />
+                      </figure>
                       <br />
                       <span>
                         🔌 Application pass through allows you to redirect any application's sound to

@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <v-card class="mt-3 pb-3" rounded>
+      <v-card class="mt-3 pb-3">
         <v-card-title class="text-h5">
           <v-icon left>mdi-frequently-asked-questions</v-icon>
           Frequently asked questions
@@ -68,8 +68,5 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'FAQ',
-  data() {
-    return {};
-  },
 });
 </script>
