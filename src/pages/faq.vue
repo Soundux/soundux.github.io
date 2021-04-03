@@ -8,7 +8,7 @@
         </v-card-title>
         <v-card-text>
           <v-list>
-            <v-list-item>
+            <v-list-item v-if="$store.getters.selectedOS && $store.getters.selectedOS.name === 'Linux'">
               <v-list-item-content>
                 <v-list-item-title class="text-wrap">
                   <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
