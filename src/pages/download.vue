@@ -111,6 +111,20 @@
                     </v-row>
                     <v-row justify="center" dense>For all distros with Flatpak support</v-row>
                   </v-col>
+                  <v-col cols="auto">
+                    <v-row justify="center" align-content="center" align="center" no-gutters dense>
+                      <a href="https://snapcraft.io/soundux" target="_blank">
+                        <img
+                          height="80"
+                          alt="Get it from the Snap Store"
+                          :src="`https://snapcraft.io/static/images/badges/en/snap-store-${
+                            $vuetify.theme.dark ? 'black' : 'white'
+                          }.svg`"
+                        />
+                      </a>
+                    </v-row>
+                    <v-row justify="center" dense>For all distros with Snap support</v-row>
+                  </v-col>
                 </v-row>
                 <v-row justify="center">
                   <v-col cols="auto">
