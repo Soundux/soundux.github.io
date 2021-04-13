@@ -18,7 +18,9 @@ export default Vue.extend({
     options: {
       type: Object as PropType<MarkdownItOptions>,
       required: false,
-      default: (): MarkdownItOptions => {},
+      default: (): MarkdownItOptions => {
+        return {};
+      },
     },
   },
   data() {
