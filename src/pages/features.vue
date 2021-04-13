@@ -142,6 +142,37 @@
               <template #activator>
                 <v-list-item-content>
                   <v-list-item-title>
+                    <v-icon left>mdi-gamepad-square-outline</v-icon>
+                    Emulated Launchpad mode
+                  </v-list-item-title>
+                </v-list-item-content>
+              </template>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-subtitle class="text-wrap">
+                    <v-col class="text-center">
+                      <img
+                        :src="`https://raw.githubusercontent.com/Soundux/screenshots/screenshots/launchpad-view-${
+                          $vuetify.theme.dark ? 'dark' : 'light'
+                        }.png`"
+                        alt="Launchpad view"
+                        width="100%"
+                      />
+                      <br />
+                      <span>
+                        An emulated launchpad on your keyboard ⌨️ <br />
+                        Press the corresponding key seen in the top right to play a sound <br />
+                        Navigate pages with your arrow keys
+                      </span>
+                    </v-col>
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list-group>
+            <v-list-group>
+              <template #activator>
+                <v-list-item-content>
+                  <v-list-item-title>
                     <v-icon left>mdi-keyboard</v-icon>
                     Global hotkeys
                   </v-list-item-title>
