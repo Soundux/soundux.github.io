@@ -15,7 +15,7 @@
     "core-js": "^3.10.1",
     "markdown-it": "^12.0.4",
     "nuxt": "^2.15.4",
-    "nuxt-i18n": "^6.24.0",
+    "nuxt-i18n": "^6.25.0",
     "roboto-fontface": "*"
   },
   "devDependencies": {
