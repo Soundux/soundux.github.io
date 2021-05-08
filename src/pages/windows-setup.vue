@@ -7,46 +7,111 @@
           Windows Setup
         </v-card-title>
         <v-card-text>
-          <v-row justify="center subtitle-1">
+          <div class="subtitle-1 text-center mb-3">
             Additional steps after installing are required to get it working properly on Windows:
-          </v-row>
-          <v-row v-resize="onResize" justify="center">
-            <v-col cols="auto">
-              <v-card outlined width="434" height="581.3">
-                <v-card-subtitle class="text-wrap">
-                  <v-icon left>mdi-microphone-settings</v-icon>
-                  Open the recording devices screen
-                </v-card-subtitle>
-                <v-card-text>
-                  <div class="d-flex justify-end" :style="cardsWrapped ? '' : 'height: 508px'">
-                    <div class="flex-grow-0 align-self-end">
-                      <img
-                        src="/screenshots/windows-recording-devices.png"
-                        alt="Recording devices"
-                        style="max-width: 100%"
-                      />
+          </div>
+
+          <v-stepper v-model="step" non-linear>
+            <v-stepper-header>
+              <v-stepper-step editable step="1">Recording devices</v-stepper-step>
+              <v-divider></v-divider>
+              <v-stepper-step editable step="2">Enable microphone</v-stepper-step>
+              <v-divider></v-divider>
+              <v-stepper-step editable step="3">
+                Improve quality
+                <small>Optional</small>
+              </v-stepper-step>
+              <v-stepper-step editable step="4">Select in Soundux</v-stepper-step>
+            </v-stepper-header>
+
+            <v-stepper-items>
+              <v-stepper-content step="1">
+                <v-card class="mb-3">
+                  <v-card-text>
+                    <div class="mb-3">
+                      <v-icon left>mdi-microphone-settings</v-icon>
+                      Open the recording devices screen
                     </div>
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="auto">
-              <v-card outlined width="434" height="581.3">
-                <v-card-subtitle class="text-wrap">
-                  <v-icon left>mdi-ear-hearing</v-icon>
-                  Open the properties of your mic, enable <kbd>Listen to this device</kbd> and select
-                  <kbd>CABLE Input</kbd> under <kbd>Playback through this device</kbd>
-                </v-card-subtitle>
-                <v-card-text>
-                  <img
-                    src="/screenshots/windows-mic-properties.png"
-                    alt="Mic properties"
-                    style="max-width: 100%"
-                  />
-                </v-card-text>
-              </v-card>
-            </v-col>
-          </v-row>
+                    <v-img
+                      src="/screenshots/windows-recording-devices.png"
+                      contain
+                      height="455"
+                      alt="Recording devices"
+                    />
+                  </v-card-text>
+                </v-card>
+
+                <v-btn color="primary" @click="step = 2">Continue</v-btn>
+              </v-stepper-content>
+
+              <v-stepper-content step="2">
+                <v-card class="mb-3">
+                  <v-card-text>
+                    <div class="mb-3">
+                      <v-icon left>mdi-ear-hearing</v-icon>
+                      Open the properties of your mic, enable <kbd>Listen to this device</kbd> and select
+                      <kbd>CABLE Input</kbd> under <kbd>Playback through this device</kbd>
+                    </div>
+                    <v-img
+                      src="/screenshots/windows-mic-properties.png"
+                      contain
+                      height="455"
+                      alt="Mic properties"
+                    />
+                  </v-card-text>
+                </v-card>
+
+                <v-btn color="primary" @click="step = 3">Continue</v-btn>
+              </v-stepper-content>
+
+              <v-stepper-content step="3">
+                <v-card class="mb-3">
+                  <v-card-text>
+                    <div class="mb-3">
+                      <v-icon left>mdi-quality-high</v-icon>
+                      For better audio quality open the properties of the <kbd>CABLE Output</kbd> and set
+                      the sample rate to the same as your microphone
+                    </div>
+                    <v-row justify="center">
+                      <v-col cols="auto">
+                        <v-img
+                          src="/screenshots/windows-sample-rate.png"
+                          contain
+                          width="455"
+                          alt="Sample rate"
+                        />
+                      </v-col>
+                    </v-row>
+                  </v-card-text>
+                </v-card>
+
+                <v-btn color="primary" @click="step = 4">Continue</v-btn>
+              </v-stepper-content>
+
+              <v-stepper-content step="4">
+                <v-card class="mb-3">
+                  <v-card-text>
+                    <div class="mb-3">
+                      <v-icon left>mdi-arrow-down-drop-circle</v-icon>
+                      In Soundux select <kbd>CABLE Input</kbd> in the top right selection
+                    </div>
+                    <v-row justify="center">
+                      <v-col cols="auto">
+                        <v-img
+                          src="/screenshots/windows-selection.png"
+                          contain
+                          width="350"
+                          alt="Selection"
+                        />
+                      </v-col>
+                    </v-row>
+                  </v-card-text>
+                </v-card>
+
+                <v-btn :disabled="true">Finished</v-btn>
+              </v-stepper-content>
+            </v-stepper-items>
+          </v-stepper>
         </v-card-text>
       </v-card>
     </v-col>
@@ -60,13 +125,8 @@ export default Vue.extend({
   name: 'WindowsSetup',
   data() {
     return {
-      cardsWrapped: false,
+      step: 1,
     };
-  },
-  methods: {
-    onResize() {
-      this.cardsWrapped = window.innerWidth < 963;
-    },
   },
 });
 </script>
