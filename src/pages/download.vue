@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <v-card class="mt-3 pb-3">
-        <v-card-title class="text-h5">
+        <v-card-title>
           <v-icon left>mdi-download</v-icon>
           Download Soundux now
         </v-card-title>
@@ -31,7 +31,7 @@
           <template v-if="latestRelease">
             <span class="text-h6">Latest version: {{ latestRelease.tag_name }}</span>
             <br />
-            <span class="text-h6">Released on {{ latestRelease.published_at }}</span>
+            <span>Released {{ new Date(latestRelease.published_at).toLocaleString() }}</span>
           </template>
           <v-skeleton-loader v-else type="article, actions"></v-skeleton-loader>
 
@@ -157,7 +157,7 @@
                         <div>Download RPM</div>
                       </v-btn>
                     </v-row>
-                    <v-row justify="center" dense>For Fedora 33</v-row>
+                    <v-row justify="center" dense>For Fedora 33+</v-row>
                   </v-col>
                 </v-row>
               </template>
@@ -172,7 +172,31 @@
       </v-card>
 
       <v-card class="mt-3 pb-3" rounded>
-        <v-card-title class="text-h5">Old versions</v-card-title>
+        <v-card-title>
+          <v-icon left>mdi-chart-line</v-icon>
+          Downloads per version
+        </v-card-title>
+        <v-card-text>
+          <v-sparkline
+            :value="downloadsPerRelease"
+            :gradient="['#f72047', '#ffd200', '#1feaea']"
+            :smooth="10"
+            :line-width="2"
+            stroke-linecap="round"
+            auto-draw
+            show-labels
+            :padding="15"
+          >
+            <template v-slot:label="item">{{ releaseTags[item.index] }}</template>
+          </v-sparkline>
+        </v-card-text>
+      </v-card>
+
+      <v-card class="mt-3 pb-3" rounded>
+        <v-card-title>
+          <v-icon left>mdi-arrow-down-bold-circle-outline</v-icon>
+          Old versions
+        </v-card-title>
         <v-card-text>
           If you have problems with the latest version they might not occur in an old version. You can
           try out older versions here:
@@ -183,7 +207,7 @@
                   <a :href="release.html_url" target="_blank">Version {{ release.tag_name }}</a>
                 </v-list-item-title>
                 <v-list-item-subtitle class="text-wrap">
-                  Released on {{ release.published_at }}
+                  Released {{ new Date(release.published_at).toLocaleString() }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -207,10 +231,19 @@ export default Vue.extend({
   data() {
     return {
       releases: [] as GithubRelease[],
+      oldToNewReleases: [] as GithubRelease[],
       error: '',
     };
   },
   computed: {
+    downloadsPerRelease(): number[] {
+      return this.oldToNewReleases.map(release =>
+        release.assets.map(asset => asset.download_count).reduce((a, b) => a + b)
+      );
+    },
+    releaseTags(): string[] {
+      return this.oldToNewReleases.map(release => release.tag_name);
+    },
     latestRelease(): GithubRelease {
       return this.releases[0];
     },
@@ -259,6 +292,8 @@ export default Vue.extend({
       const gitHubData = await fetch(`https://api.github.com/repos/Soundux/Soundux/releases`);
       if (gitHubData) {
         this.releases = await gitHubData.json();
+        this.releases = this.releases.filter(release => !release.prerelease);
+        this.oldToNewReleases = [...this.releases].reverse();
       }
     } catch (error) {
       console.error(error);
