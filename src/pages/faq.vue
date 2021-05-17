@@ -35,6 +35,19 @@
               </v-list-item-content>
             </v-list-item>
 
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title class="text-wrap">
+                  <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
+                  I can't hear the sounds
+                </v-list-item-title>
+                <v-list-item-subtitle class="text-wrap">
+                  <v-icon left color="primary">mdi-information-outline</v-icon>
+                  Check if your device default is set properly
+                </v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+
             <v-list-item v-if="$store.getters.selectedOS && $store.getters.selectedOS.name === 'Linux'">
               <v-list-item-content>
                 <v-list-item-title class="text-wrap">
