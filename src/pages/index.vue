@@ -80,6 +80,29 @@
           </v-btn>
         </v-col>
       </v-row>
+      <template v-if="$store.getters.selectedOS && $store.getters.selectedOS.name === 'Linux'">
+        <v-divider class="my-5"></v-divider>
+        <v-row justify="center">Native support for</v-row>
+        <v-row justify="center" align="center">
+          <v-col cols="auto">
+            <v-tooltip bottom>
+              <template #activator="{ on, attrs }">
+                <v-img src="/pulse.png" width="80" contain v-bind="attrs" v-on="on"></v-img>
+              </template>
+              <span>PulseAudio</span>
+            </v-tooltip>
+          </v-col>
+          <v-col cols="auto">
+            <v-tooltip bottom>
+              <template #activator="{ on, attrs }">
+                <v-img src="/pipewire.svg" width="80" contain v-bind="attrs" v-on="on"></v-img>
+              </template>
+              <span>PipeWire</span>
+            </v-tooltip>
+          </v-col>
+        </v-row>
+        <v-divider class="my-5"></v-divider>
+      </template>
     </v-col>
   </v-row>
 </template>
