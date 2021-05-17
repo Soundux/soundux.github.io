@@ -25,35 +25,61 @@
             GitHub
           </v-btn>
         </v-col>
-        <v-col v-if="$vuetify.breakpoint.smAndDown" cols="auto">
-          <v-btn color="yellow darken-2" light nuxt to="/features" x-large width="150">
-            <v-icon left>mdi-star-circle-outline</v-icon>
-            Features
-          </v-btn>
-        </v-col>
-      </v-row>
-      <v-row v-if="$vuetify.breakpoint.mdAndUp" justify="center" dense>
-        <v-col cols="auto" class="">
-          <v-btn color="yellow darken-2" light nuxt to="/features" x-large width="150">
-            <v-icon left>mdi-star-circle-outline</v-icon>
-            Features
-          </v-btn>
-        </v-col>
       </v-row>
 
-      <div class="text-center my-5">
-        <v-carousel cycle show-arrows-on-hover>
-          <v-carousel-item
-            v-for="screenshot in screenshots"
-            :key="screenshot"
-            :src="`https://raw.githubusercontent.com/Soundux/screenshots/screenshots/${screenshot}${
-              $vuetify.theme.dark ? '-dark' : '-light'
-            }.png`"
-          >
-          </v-carousel-item>
-        </v-carousel>
-      </div>
-      <!--<hr class="my-3" />-->
+      <v-row justify="center">
+        <v-col cols="auto" class="text-center">
+          It has a universal architecture and therefore works with a variety of applications
+        </v-col>
+      </v-row>
+      <v-row justify="center">
+        <v-col cols="auto">
+          <v-icon left>mdi-discord</v-icon>
+          Discord
+        </v-col>
+        <v-col cols="auto">
+          <v-icon left>mdi-headset</v-icon>
+          TeamSpeak
+        </v-col>
+        <v-col cols="auto">
+          <v-icon left>mdi-skype</v-icon>
+          Skype
+        </v-col>
+        <v-col cols="auto">
+          <v-icon left>mdi-steam</v-icon>
+          Steam
+        </v-col>
+        <v-col cols="auto">
+          <v-icon left>mdi-battlenet</v-icon>
+          Battle.net
+        </v-col>
+        <v-col cols="auto">
+          <v-icon left>mdi-origin</v-icon>
+          Origin
+        </v-col>
+        <v-col cols="auto">
+          <v-icon left>mdi-ubisoft</v-icon>
+          Ubisoft
+        </v-col>
+        <v-col cols="auto">
+          <v-icon left>mdi-dots-horizontal</v-icon>
+          And many more
+        </v-col>
+      </v-row>
+      <v-row justify="center">
+        <v-col cols="auto">
+          <v-btn color="yellow darken-2" light nuxt to="/features" x-large>
+            <v-icon left>mdi-star-circle-outline</v-icon>
+            See all features
+          </v-btn>
+        </v-col>
+        <v-col cols="auto">
+          <v-btn color="yellow darken-3" light nuxt to="/screenshots" x-large>
+            <v-icon left>mdi-image</v-icon>
+            Screenshots
+          </v-btn>
+        </v-col>
+      </v-row>
     </v-col>
   </v-row>
 </template>
@@ -61,11 +87,5 @@
 <script lang="ts">
 import Vue from 'vue';
 
-export default Vue.extend({
-  data() {
-    return {
-      screenshots: ['playing', 'grid-view', 'multiple-playing', 'pass-through', 'search', 'settings'],
-    };
-  },
-});
+export default Vue.extend({});
 </script>

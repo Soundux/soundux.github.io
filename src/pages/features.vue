@@ -232,8 +232,5 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Features',
-  data() {
-    return {};
-  },
 });
 </script>

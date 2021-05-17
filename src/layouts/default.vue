@@ -63,7 +63,7 @@
       </div>
     </v-app-bar>
     <v-main>
-      <v-container fluid>
+      <v-container fluid fill-height>
         <nuxt />
       </v-container>
     </v-main>
@@ -88,6 +88,11 @@ export default Vue.extend({
           icon: 'mdi-apps',
           title: 'Home',
           to: '/',
+        },
+        {
+          icon: 'mdi-image',
+          title: 'Screenshots',
+          to: '/screenshots',
         },
         {
           icon: 'mdi-star-circle-outline',
