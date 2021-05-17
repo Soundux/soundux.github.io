@@ -237,9 +237,10 @@ export default Vue.extend({
   },
   computed: {
     downloadsPerRelease(): number[] {
-      return this.oldToNewReleases.map(release =>
-        release.assets.map(asset => asset.download_count).reduce((a, b) => a + b)
-      );
+      return this.oldToNewReleases.map(release => {
+        const assetDownloads = release.assets.map(asset => asset.download_count);
+        return assetDownloads ? assetDownloads.reduce((a, b) => a + b) : 0;
+      });
     },
     releaseTags(): string[] {
       return this.oldToNewReleases.map(release => release.tag_name);
