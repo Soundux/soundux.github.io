@@ -46,7 +46,11 @@ const config: NuxtConfig = {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-i18n'],
+  modules: ['nuxt-i18n', 'vue-plausible'],
+
+  plausible: {
+    domain: 'soundux.rocks',
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

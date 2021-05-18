@@ -16,7 +16,8 @@
     "markdown-it": "^12.0.6",
     "nuxt": "^2.15.6",
     "nuxt-i18n": "^6.27.0",
-    "roboto-fontface": "*"
+    "roboto-fontface": "*",
+    "vue-plausible": "^1.1.4"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.6",
