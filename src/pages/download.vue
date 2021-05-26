@@ -176,6 +176,7 @@
           <v-icon left>mdi-chart-line</v-icon>
           Downloads per version
         </v-card-title>
+        <v-card-subtitle> Latest 10 versions </v-card-subtitle>
         <v-card-text>
           <v-sparkline
             :value="downloadsPerRelease"
@@ -296,7 +297,9 @@ export default Vue.extend({
         this.releases = this.releases.filter(
           release => !release.prerelease && !release.tag_name.includes('b')
         );
-        this.oldToNewReleases = [...this.releases].reverse();
+        this.oldToNewReleases = [...this.releases]
+          .reverse()
+          .slice(Math.max(this.releases.length - 10, 1));
       }
     } catch (error) {
       console.error(error);
