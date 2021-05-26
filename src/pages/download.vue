@@ -293,7 +293,9 @@ export default Vue.extend({
       const gitHubData = await fetch(`https://api.github.com/repos/Soundux/Soundux/releases`);
       if (gitHubData) {
         this.releases = await gitHubData.json();
-        this.releases = this.releases.filter(release => !release.prerelease);
+        this.releases = this.releases.filter(
+          release => !release.prerelease && !release.tag_name.includes('b')
+        );
         this.oldToNewReleases = [...this.releases].reverse();
       }
     } catch (error) {
