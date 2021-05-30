@@ -72,9 +72,21 @@
                 >
                   <h3 class="text-h5">Important!</h3>
                   <div>
-                    Please click the button below for important information about Windows support
+                    Please click the button below or watch the video for important information about
+                    Windows support
                   </div>
-                  <v-row align="center" class="my-2">
+                  <v-row justify="center" class="my-2">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube-nocookie.com/embed/bNzqohrG-eg"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </v-row>
+                  <v-row class="my-2">
                     <v-spacer></v-spacer>
                     <v-col class="shrink">
                       <v-btn color="red" nuxt to="/windows-setup">
