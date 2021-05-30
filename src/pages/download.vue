@@ -129,35 +129,172 @@
                 <v-row justify="center">
                   <v-col cols="auto">
                     <v-row justify="center" no-gutters dense>
-                      <v-btn
-                        color="primary"
-                        x-large
-                        href="https://aur.archlinux.org/packages/soundux/"
-                        target="_blank"
-                      >
-                        <v-icon left>mdi-arch</v-icon>
-                        <div>Download AUR</div>
-                      </v-btn>
+                      <v-dialog v-model="archModal" width="500">
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-btn color="blue lighten-1" x-large v-bind="attrs" v-on="on">
+                            <v-icon left>mdi-arch</v-icon>
+                            <div>Arch Linux</div>
+                          </v-btn>
+                        </template>
+
+                        <v-card>
+                          <v-card-title>
+                            <v-icon left>mdi-arch</v-icon>
+                            Arch Linux
+                            <v-spacer></v-spacer>
+                            <v-icon @click="archModal = false">mdi-close</v-icon>
+                          </v-card-title>
+                          <v-card-text>
+                            Install Soundux with your favorite AUR helper
+                            <br />
+                            <code class="d-block text-center">
+                              <NeoTextra
+                                :data="['yay', 'paru', 'pikaur', 'pacaur']"
+                                :timer="1.5"
+                                :infinite="true"
+                                filter="top-bottom"
+                              ></NeoTextra>
+                              -S soundux</code
+                            >
+                          </v-card-text>
+                          <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn
+                              color="blue lighten-1"
+                              x-large
+                              href="https://aur.archlinux.org/packages/soundux/"
+                              target="_blank"
+                            >
+                              <v-icon left>mdi-arch</v-icon>
+                              <div>Visit AUR page</div>
+                            </v-btn>
+                            <v-spacer></v-spacer>
+                          </v-card-actions>
+                        </v-card>
+                      </v-dialog>
                     </v-row>
-                    <v-row justify="center" dense>For Arch Linux</v-row>
                   </v-col>
                   <v-col cols="auto">
                     <v-row justify="center" no-gutters dense>
-                      <v-btn color="primary" x-large :href="debPackage">
-                        <v-icon left>mdi-debian</v-icon>
-                        <div>Download DEB</div>
-                      </v-btn>
+                      <v-dialog v-model="debianModal" width="500">
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-btn color="red darken-1" x-large v-bind="attrs" v-on="on">
+                            <v-icon left>mdi-debian</v-icon>
+                            <div>debian</div>
+                          </v-btn>
+                        </template>
+
+                        <v-card>
+                          <v-card-title>
+                            <v-icon left>mdi-debian</v-icon>
+                            Debian
+                            <v-spacer></v-spacer>
+                            <v-icon @click="debianModal = false">mdi-close</v-icon>
+                          </v-card-title>
+                          <v-card-text>
+                            Install Soundux on Debian
+                            <div class="subtitle-1">via DEB package (no automatic updates)</div>
+                            <code>sudo dpkg -i {{ debPackage[1] }}</code>
+                          </v-card-text>
+                          <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="red darken-1" x-large :href="debPackage[0]">
+                              <v-icon left>mdi-debian</v-icon>
+                              <div>Download DEB</div>
+                            </v-btn>
+                            <v-spacer></v-spacer>
+                          </v-card-actions>
+                        </v-card>
+                      </v-dialog>
                     </v-row>
-                    <v-row justify="center" dense>For Ubuntu 20.04+ / Debian sid</v-row>
                   </v-col>
                   <v-col cols="auto">
                     <v-row justify="center" no-gutters dense>
-                      <v-btn color="primary" x-large :href="rpmPackage">
-                        <v-icon left>mdi-fedora</v-icon>
-                        <div>Download RPM</div>
-                      </v-btn>
+                      <v-dialog v-model="ubuntuModal" width="500">
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-btn color="orange darken-2" x-large v-bind="attrs" v-on="on">
+                            <v-icon left>mdi-ubuntu</v-icon>
+                            <div>Ubuntu</div>
+                          </v-btn>
+                        </template>
+
+                        <v-card>
+                          <v-card-title>
+                            <v-icon left>mdi-ubuntu</v-icon>
+                            Ubuntu
+                            <v-spacer></v-spacer>
+                            <v-icon @click="ubuntuModal = false">mdi-close</v-icon>
+                          </v-card-title>
+                          <v-card-text>
+                            Install Soundux on Ubuntu
+                            <div class="subtitle-1">
+                              via
+                              <a href="https://github.com/pacstall/pacstall" target="_blank">Pacstall</a>
+                            </div>
+                            <code>sudo pacstall -I soundux</code>
+                            <div class="subtitle-1">via DEB package (no automatic updates)</div>
+                            <code>sudo dpkg -i {{ debPackage[1] }}</code>
+                          </v-card-text>
+                          <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="orange darken-2" x-large :href="debPackage[0]">
+                              <v-icon left>mdi-ubuntu</v-icon>
+                              <div>Download DEB</div>
+                            </v-btn>
+                            <v-spacer></v-spacer>
+                          </v-card-actions>
+                        </v-card>
+                      </v-dialog>
                     </v-row>
-                    <v-row justify="center" dense>For Fedora 33+</v-row>
+                  </v-col>
+                  <v-col cols="auto">
+                    <v-row justify="center" no-gutters dense>
+                      <v-dialog v-model="fedoraModal" width="500">
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-btn color="blue darken-3" x-large v-bind="attrs" v-on="on">
+                            <v-icon left>mdi-fedora</v-icon>
+                            <div>Fedora</div>
+                          </v-btn>
+                        </template>
+
+                        <v-card>
+                          <v-card-title>
+                            <v-icon left>mdi-fedora</v-icon>
+                            Fedora
+                            <v-spacer></v-spacer>
+                            <v-icon @click="fedoraModal = false">mdi-close</v-icon>
+                          </v-card-title>
+                          <v-card-text>
+                            Install Soundux on Fedora
+                            <div class="subtitle-1">
+                              via
+                              <a
+                                href="https://copr.fedorainfracloud.org/coprs/rivenirvana/soundux/"
+                                target="_blank"
+                              >
+                                COPR
+                              </a>
+                            </div>
+                            <div>
+                              <code>sudo dnf copr enable rivenirvana/soundux</code>
+                            </div>
+                            <div>
+                              <code>sudo dnf install soundux</code>
+                            </div>
+                            <div class="text-subtitle-1">via RPM package (no automatic updates)</div>
+                            <code>sudo dnf install {{ rpmPackage[1] }}</code>
+                          </v-card-text>
+                          <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="blue darken-3" x-large :href="rpmPackage[0]">
+                              <v-icon left>mdi-fedora</v-icon>
+                              <div>Download RPM</div>
+                            </v-btn>
+                            <v-spacer></v-spacer>
+                          </v-card-actions>
+                        </v-card>
+                      </v-dialog>
+                    </v-row>
                   </v-col>
                 </v-row>
               </template>
@@ -176,7 +313,7 @@
           <v-icon left>mdi-chart-line</v-icon>
           Downloads per version
         </v-card-title>
-        <v-card-subtitle> Latest 10 versions </v-card-subtitle>
+        <v-card-subtitle>Latest 10 versions</v-card-subtitle>
         <v-card-text>
           <v-sparkline
             :value="downloadsPerRelease"
@@ -234,6 +371,11 @@ export default Vue.extend({
       releases: [] as GithubRelease[],
       oldToNewReleases: [] as GithubRelease[],
       error: '',
+      // modals
+      archModal: false,
+      debianModal: false,
+      ubuntuModal: false,
+      fedoraModal: false,
     };
   },
   computed: {
@@ -270,23 +412,23 @@ export default Vue.extend({
       }
       return 'https://github.com/Soundux/Soundux/releases/latest';
     },
-    debPackage(): string {
+    debPackage(): [string, string] {
       if (this.latestRelease) {
         const asset = this.latestRelease.assets.find(({ name }) => name.endsWith('.deb'));
         if (asset) {
-          return asset.browser_download_url;
+          return [asset.browser_download_url, asset.name];
         }
       }
-      return 'https://github.com/Soundux/Soundux/releases/latest';
+      return ['https://github.com/Soundux/Soundux/releases/latest', 'soundux-*.deb'];
     },
-    rpmPackage(): string {
+    rpmPackage(): [string, string] {
       if (this.latestRelease) {
         const asset = this.latestRelease.assets.find(({ name }) => name.endsWith('.rpm'));
         if (asset) {
-          return asset.browser_download_url;
+          return [asset.browser_download_url, asset.name];
         }
       }
-      return 'https://github.com/Soundux/Soundux/releases/latest';
+      return ['https://github.com/Soundux/Soundux/releases/latest', 'soundux-*.rpm'];
     },
   },
   async mounted() {
