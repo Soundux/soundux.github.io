@@ -142,7 +142,7 @@
                   <v-col cols="auto">
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="archModal" width="500">
-                        <template v-slot:activator="{ on, attrs }">
+                        <template #activator="{ on, attrs }">
                           <v-btn color="blue lighten-1" x-large v-bind="attrs" v-on="on">
                             <v-icon left>mdi-arch</v-icon>
                             <div>Arch Linux</div>
@@ -189,7 +189,7 @@
                   <v-col cols="auto">
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="debianModal" width="500">
-                        <template v-slot:activator="{ on, attrs }">
+                        <template #activator="{ on, attrs }">
                           <v-btn color="red darken-1" x-large v-bind="attrs" v-on="on">
                             <v-icon left>mdi-debian</v-icon>
                             <div>debian</div>
@@ -223,7 +223,7 @@
                   <v-col cols="auto">
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="ubuntuModal" width="500">
-                        <template v-slot:activator="{ on, attrs }">
+                        <template #activator="{ on, attrs }">
                           <v-btn color="orange darken-2" x-large v-bind="attrs" v-on="on">
                             <v-icon left>mdi-ubuntu</v-icon>
                             <div>Ubuntu</div>
@@ -262,7 +262,7 @@
                   <v-col cols="auto">
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="fedoraModal" width="500">
-                        <template v-slot:activator="{ on, attrs }">
+                        <template #activator="{ on, attrs }">
                           <v-btn color="blue darken-3" x-large v-bind="attrs" v-on="on">
                             <v-icon left>mdi-fedora</v-icon>
                             <div>Fedora</div>

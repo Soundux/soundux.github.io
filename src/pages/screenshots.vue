@@ -11,7 +11,7 @@
             Here you can see screenshots of the current version
           </v-row>
           <v-row justify="center" class="my-5">
-            <v-col cols="auto" v-for="screenshot in screenshots" :key="screenshot">
+            <v-col v-for="screenshot in screenshots" :key="screenshot" cols="auto">
               <v-img
                 :src="`https://raw.githubusercontent.com/Soundux/screenshots/screenshots/${screenshot}${
                   $vuetify.theme.dark ? '-dark' : '-light'

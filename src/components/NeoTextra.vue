@@ -26,14 +26,12 @@ THE SOFTWARE.
 
 <template>
   <div class="textra">
-    <div class="mainTextra" v-html="currentWord" :style="mainStyleComputed"></div>
+    <div class="mainTextra" :style="mainStyleComputed" v-html="currentWord"></div>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
+<script>
+export default {
   name: 'NeoTextra',
   props: {
     data: {
@@ -81,13 +79,13 @@ export default Vue.extend({
   created() {
     let previousTime = 0;
     const that = this;
-    function run(currentTime) {
+    const run = currentTime => {
       if (previousTime + this.timer * 1000 < currentTime) {
-        //hiding
+        // hiding
         this.liStl = this.filters[this.filter][0];
       }
       if (previousTime + this.timer * 1000 + 1000 < currentTime) {
-        //showing
+        // showing
         previousTime = currentTime;
         this.currentWord = this.data[++this.dataCounter];
         this.liStl = this.filters[this.filter][1];
@@ -101,14 +99,14 @@ export default Vue.extend({
           }
         }
       }
-      this.animationID = window.requestAnimationFrame(run.bind(that));
-    }
-    this.animationID = window.requestAnimationFrame(run.bind(that));
+      this.animationID = requestAnimationFrame(run.bind(that));
+    };
+    this.animationID = requestAnimationFrame(run.bind(that));
   },
   beforeDestroy() {
-    window.cancelAnimationFrame(this.animationID);
+    cancelAnimationFrame(this.animationID);
   },
-});
+};
 </script>
 
 <style scoped lang="scss">
