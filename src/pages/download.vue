@@ -77,10 +77,10 @@
                   </div>
                   <v-row justify="center" class="my-2">
                     <iframe
-                      width="560"
+                      width="80%"
                       height="315"
-                      src="https://www.youtube-nocookie.com/embed/bNzqohrG-eg"
-                      title="YouTube video player"
+                      src="https://odysee.com/$/embed/windows-setup/901ba77743f8f7b9e816c91e5ee2a3ca465744e0?r=AFN4vT5FPNqHqPE9pi4vvXwkgnFbEZVo"
+                      title="LBRY video player"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
