@@ -143,7 +143,7 @@
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="archModal" width="500">
                         <template #activator="{ on, attrs }">
-                          <v-btn color="blue lighten-1" x-large v-bind="attrs" v-on="on">
+                          <v-btn color="blue lighten-1" x-large dark v-bind="attrs" v-on="on">
                             <v-icon left>mdi-arch</v-icon>
                             <div>Arch Linux</div>
                           </v-btn>
@@ -174,6 +174,7 @@
                             <v-btn
                               color="blue lighten-1"
                               x-large
+                              dark
                               href="https://aur.archlinux.org/packages/soundux/"
                               target="_blank"
                             >
@@ -190,7 +191,7 @@
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="debianModal" width="500">
                         <template #activator="{ on, attrs }">
-                          <v-btn color="red darken-1" x-large v-bind="attrs" v-on="on">
+                          <v-btn color="red darken-1" x-large dark v-bind="attrs" v-on="on">
                             <v-icon left>mdi-debian</v-icon>
                             <div>debian</div>
                           </v-btn>
@@ -210,7 +211,7 @@
                           </v-card-text>
                           <v-card-actions>
                             <v-spacer></v-spacer>
-                            <v-btn color="red darken-1" x-large :href="debPackage[0]">
+                            <v-btn color="red darken-1" x-large dark :href="debPackage[0]">
                               <v-icon left>mdi-debian</v-icon>
                               <div>Download DEB</div>
                             </v-btn>
@@ -224,7 +225,7 @@
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="ubuntuModal" width="500">
                         <template #activator="{ on, attrs }">
-                          <v-btn color="orange darken-2" x-large v-bind="attrs" v-on="on">
+                          <v-btn color="orange darken-2" x-large dark v-bind="attrs" v-on="on">
                             <v-icon left>mdi-ubuntu</v-icon>
                             <div>Ubuntu</div>
                           </v-btn>
@@ -249,7 +250,7 @@
                           </v-card-text>
                           <v-card-actions>
                             <v-spacer></v-spacer>
-                            <v-btn color="orange darken-2" x-large :href="debPackage[0]">
+                            <v-btn color="orange darken-2" x-large dark :href="debPackage[0]">
                               <v-icon left>mdi-ubuntu</v-icon>
                               <div>Download DEB</div>
                             </v-btn>
@@ -263,7 +264,7 @@
                     <v-row justify="center" no-gutters dense>
                       <v-dialog v-model="fedoraModal" width="500">
                         <template #activator="{ on, attrs }">
-                          <v-btn color="blue darken-3" x-large v-bind="attrs" v-on="on">
+                          <v-btn color="blue darken-3" x-large dark v-bind="attrs" v-on="on">
                             <v-icon left>mdi-fedora</v-icon>
                             <div>Fedora</div>
                           </v-btn>
@@ -298,7 +299,7 @@
                           </v-card-text>
                           <v-card-actions>
                             <v-spacer></v-spacer>
-                            <v-btn color="blue darken-3" x-large :href="rpmPackage[0]">
+                            <v-btn color="blue darken-3" x-large dark :href="rpmPackage[0]">
                               <v-icon left>mdi-fedora</v-icon>
                               <div>Download RPM</div>
                             </v-btn>
