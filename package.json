@@ -35,6 +35,6 @@
     "eslint-plugin-vue": "^7.10.0",
     "patch-package": "^6.4.7",
     "postinstall-postinstall": "^2.1.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.1"
   }
 }
