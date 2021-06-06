@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/windows-setup", {data:[{}],fetch:{},mutations:[]});
