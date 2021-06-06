@@ -448,13 +448,16 @@ export default Vue.extend({
     try {
       const gitHubData = await fetch(`https://api.github.com/repos/Soundux/Soundux/releases`);
       if (gitHubData) {
-        this.releases = await gitHubData.json();
-        this.releases = this.releases.filter(
-          release => !release.prerelease && !release.tag_name.includes('b')
-        );
-        this.oldToNewReleases = [...this.releases]
-          .reverse()
-          .slice(Math.max(this.releases.length - 10, 1));
+        const releases = await gitHubData.json();
+        if (Array.isArray(releases)) {
+          const nonBeta = releases.filter(
+            release => !release.prerelease && !release.tag_name.includes('b')
+          );
+          this.releases = nonBeta;
+          this.oldToNewReleases = [...nonBeta].reverse().slice(Math.max(nonBeta.length - 10, 1));
+        } else {
+          this.error = 'JSON was not an array';
+        }
       }
     } catch (error) {
       console.error(error);
