@@ -329,6 +329,7 @@
         <v-card-subtitle>Latest 10 versions</v-card-subtitle>
         <v-card-text>
           <v-sparkline
+            v-if="oldToNewReleases.length > 0"
             :value="downloadsPerRelease"
             :gradient="['#f72047', '#ffd200', '#1feaea']"
             :smooth="10"
@@ -340,6 +341,7 @@
           >
             <template v-slot:label="item">{{ releaseTags[item.index] }}</template>
           </v-sparkline>
+          <v-skeleton-loader v-else type="list-item-three-line"></v-skeleton-loader>
         </v-card-text>
       </v-card>
 
@@ -363,10 +365,7 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
-          <v-skeleton-loader
-            v-else
-            type="list-item-two-line, list-item-two-line, list-item-two-line"
-          ></v-skeleton-loader>
+          <v-skeleton-loader v-else type="list-item-two-line@3"></v-skeleton-loader>
         </v-card-text>
       </v-card>
     </v-col>
