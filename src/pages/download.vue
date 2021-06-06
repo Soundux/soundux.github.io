@@ -21,6 +21,7 @@
                   href="https://github.com/Soundux/Soundux/releases"
                   target="_blank"
                 >
+                  <v-icon left>mdi-github</v-icon>
                   Visit our GitHub
                 </v-btn>
               </v-col>
