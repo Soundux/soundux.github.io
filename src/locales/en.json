@@ -18,12 +18,12 @@
     "title": "Features",
     "clickToShowAdditionalInformation": "Click on the different features to reveal additional information about them",
     "darkAndLightTheme": {
-      "title":"Dark and light theme",
+      "title": "Dark and light theme",
       "description": "Pick your poison"
     },
     "folderTabs": {
       "title": "Folder tabs",
-      "description": "You don't have to add single sounds. Just put them in a folder \uD83D\uDCC2 and add it as a tab. It will automatically populate with all the supported audio formats \uD83C\uDFA7"
+      "description": "You don't have to add single sounds. Just put them in a folder 📂 and add it as a tab. It will automatically populate with all the supported audio formats 🎧"
     },
     "mediaControls": {
       "title": "Media controls",
@@ -48,7 +48,7 @@
       "title": "Global hotkeys",
       "description": "You can set hotkeys for each sound and to stop all sounds. There is also an option to only trigger hotkeys from the currently selected tab"
     },
-    "passThrough":{
+    "passThrough": {
       "title": "Application pass-through",
       "description": "Application pass-through allows you to redirect any application's sound to another. You can use it as a workaround for Discord's share audio feature",
       "description2": "Can also be opened with {ctrl} + {g}"
