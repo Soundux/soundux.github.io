@@ -77,7 +77,7 @@ const config: NuxtConfig = {
       { code: 'de', iso: 'de-DE', file: 'de.json' },
     ],
     langDir: 'locales/',
-    defaultLocale: 'de',
+    defaultLocale: 'en',
   },
 
   vue: {
