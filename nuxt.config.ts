@@ -76,8 +76,13 @@ const config: NuxtConfig = {
       { code: 'en', iso: 'en-US', file: 'en.json' },
       { code: 'de', iso: 'de-DE', file: 'de.json' },
     ],
+    lazy: true,
     langDir: 'locales/',
     defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: false,
+    },
   },
 
   vue: {
