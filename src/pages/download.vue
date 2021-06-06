@@ -447,7 +447,7 @@ export default Vue.extend({
   async mounted() {
     try {
       const gitHubData = await fetch(`https://api.github.com/repos/Soundux/Soundux/releases`);
-      if (gitHubData) {
+      if (gitHubData && gitHubData.ok) {
         const releases = await gitHubData.json();
         if (Array.isArray(releases)) {
           const nonBeta = releases.filter(
@@ -458,6 +458,8 @@ export default Vue.extend({
         } else {
           this.error = 'JSON was not an array';
         }
+      } else {
+        this.error = 'Response was not OK';
       }
     } catch (error) {
       console.error(error);
