@@ -247,9 +247,9 @@
                             {{ $t('download.linux.ubuntu') }}
                             <i18n tag="div" class="subtitle-1" path="download.linux.pacstall">
                               <a
+                                slot="pacstall"
                                 href="https://github.com/pacstall/pacstall"
                                 target="_blank"
-                                slot="pacstall"
                               >
                                 Pacstall
                               </a>
@@ -294,9 +294,9 @@
                             {{ $t('download.linux.fedora') }}
                             <i18n tag="div" class="subtitle-1" path="download.linux.copr">
                               <a
+                                slot="copr"
                                 href="https://copr.fedorainfracloud.org/coprs/rivenirvana/soundux/"
                                 target="_blank"
-                                slot="copr"
                               >
                                 COPR
                               </a>
@@ -359,7 +359,7 @@
             show-labels
             :padding="15"
           >
-            <template v-slot:label="item">{{ releaseTags[item.index] }}</template>
+            <template #label="item">{{ releaseTags[item.index] }}</template>
           </v-sparkline>
           <v-skeleton-loader v-else type="list-item-three-line"></v-skeleton-loader>
         </v-card-text>
