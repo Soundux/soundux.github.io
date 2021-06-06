@@ -162,7 +162,7 @@
                             <br />
                             <code class="d-block text-center">
                               <NeoTextra
-                                :data="['yay', 'paru', 'pikaur', 'pacaur']"
+                                :data="['yay', 'paru', 'pikaur', 'pacaur', 'trizen']"
                                 :timer="1.5"
                                 :infinite="true"
                                 filter="top-bottom"
