@@ -27,7 +27,7 @@
     },
     "mediaControls": {
       "title": "Media controls",
-      "description": "We have individual media controls for each playing sound. You can play/pause ⏯, seek \uD83D\uDD3C, repeat \uD83D\uDD02 or stop ⏹ them."
+      "description": "We have individual media controls for each playing sound. You can play/pause ⏯, seek 🔼, repeat 🔂 or stop ⏹ them."
     },
     "audioFormats": {
       "title": "Supports a variety of audio formats",
