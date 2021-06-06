@@ -102,7 +102,7 @@
     "step1": "Recording devices",
     "openRecordingDevices": "Open the recording devices settings",
     "step2": "Enable microphone",
-    "changeProperties": "Open the properties of your mic, enable {listenToThisDevice} and select {cableInput} under {playbackThroughThisDevice}",
+    "changeProperties": "Open the properties of your mic, enable {listenToThisDevice} and select {cableInput} under {playbackThroughThisDevice}.",
     "listenToThisDevice": "Listen to this device",
     "playbackThroughThisDevice": "Playback through this device",
     "step3": "Improve quality",
@@ -119,7 +119,7 @@
     },
     "discordAudioQuality": {
       "question": "Why is the audio quality in Discord so bad?",
-      "answer": "Try disabling {echoCancellation} and {noiseReduction} in Discord's settings under {voiceAndVideo}",
+      "answer": "Try disabling {echoCancellation} and {noiseReduction} in Discord's settings under {voiceAndVideo}.",
       "echoCancellation": "Echo Cancellation",
       "noiseReduction": "Noise Reduction",
       "voiceAndVideo": "Voice & Video"
