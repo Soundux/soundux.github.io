@@ -4,24 +4,24 @@
       <v-card class="mt-3 pb-3" width="1000">
         <v-card-title class="text-h5">
           <v-icon>mdi-microsoft-windows</v-icon>
-          Windows Setup
+          {{ $t('windowsSetup.title') }}
         </v-card-title>
         <v-card-text>
           <div class="subtitle-1 text-center mb-3">
-            Additional steps after installing are required to get it working properly on Windows:
+            {{ $t('windowsSetup.additionalSteps') }}
           </div>
 
           <v-stepper v-model="step" non-linear>
             <v-stepper-header>
-              <v-stepper-step editable step="1">Recording devices</v-stepper-step>
+              <v-stepper-step editable step="1">{{ $t('windowsSetup.step1') }}</v-stepper-step>
               <v-divider></v-divider>
-              <v-stepper-step editable step="2">Enable microphone</v-stepper-step>
+              <v-stepper-step editable step="2">{{ $t('windowsSetup.step2') }}</v-stepper-step>
               <v-divider></v-divider>
               <v-stepper-step editable step="3">
-                Improve quality
-                <small>Optional</small>
+                {{ $t('windowsSetup.step3') }}
+                <small>{{ $t('windowsSetup.optional') }}</small>
               </v-stepper-step>
-              <v-stepper-step editable step="4">Select in Soundux</v-stepper-step>
+              <v-stepper-step editable step="4">{{ $t('windowsSetup.step4') }}</v-stepper-step>
             </v-stepper-header>
 
             <v-stepper-items>
@@ -30,7 +30,7 @@
                   <v-card-text>
                     <div class="mb-3">
                       <v-icon left>mdi-microphone-settings</v-icon>
-                      Open the recording devices screen
+                      {{ $t('windowsSetup.openRecordingDevices') }}
                     </div>
                     <v-img
                       src="/screenshots/windows-recording-devices.png"
@@ -41,7 +41,10 @@
                   </v-card-text>
                 </v-card>
 
-                <v-btn color="primary" @click="step = 2">Continue</v-btn>
+                <v-btn color="primary" @click="step = 2">
+                  <v-icon left>mdi-chevron-right</v-icon>
+                  {{ $t('windowsSetup.continue') }}
+                </v-btn>
               </v-stepper-content>
 
               <v-stepper-content step="2">
@@ -49,8 +52,13 @@
                   <v-card-text>
                     <div class="mb-3">
                       <v-icon left>mdi-ear-hearing</v-icon>
-                      Open the properties of your mic, enable <kbd>Listen to this device</kbd> and select
-                      <kbd>CABLE Input</kbd> under <kbd>Playback through this device</kbd>
+                      <i18n path="windowsSetup.changeProperties">
+                        <kbd slot="listenToThisDevice">{{ $t('windowsSetup.listenToThisDevice') }}</kbd>
+                        <kbd slot="cableInput">CABLE Input</kbd>
+                        <kbd slot="playbackThroughThisDevice">{{
+                          $t('windowsSetup.playbackThroughThisDevice')
+                        }}</kbd>
+                      </i18n>
                     </div>
                     <v-img
                       src="/screenshots/windows-mic-properties.png"
@@ -61,7 +69,10 @@
                   </v-card-text>
                 </v-card>
 
-                <v-btn color="primary" @click="step = 3">Continue</v-btn>
+                <v-btn color="primary" @click="step = 3">
+                  <v-icon left>mdi-chevron-right</v-icon>
+                  {{ $t('windowsSetup.continue') }}
+                </v-btn>
               </v-stepper-content>
 
               <v-stepper-content step="3">
@@ -69,8 +80,9 @@
                   <v-card-text>
                     <div class="mb-3">
                       <v-icon left>mdi-quality-high</v-icon>
-                      For better audio quality open the properties of the <kbd>CABLE Output</kbd> and set
-                      the sample rate to the same as your microphone
+                      <i18n path="windowsSetup.betterAudioQuality">
+                        <kbd slot="cableOutput">CABLE Output</kbd>
+                      </i18n>
                     </div>
                     <v-row justify="center">
                       <v-col cols="auto">
@@ -85,7 +97,10 @@
                   </v-card-text>
                 </v-card>
 
-                <v-btn color="primary" @click="step = 4">Continue</v-btn>
+                <v-btn color="primary" @click="step = 4">
+                  <v-icon left>mdi-chevron-right</v-icon>
+                  {{ $t('windowsSetup.continue') }}
+                </v-btn>
               </v-stepper-content>
 
               <v-stepper-content step="4">
@@ -93,7 +108,9 @@
                   <v-card-text>
                     <div class="mb-3">
                       <v-icon left>mdi-arrow-down-drop-circle</v-icon>
-                      In Soundux select <kbd>CABLE Input</kbd> in the top right selection
+                      <i18n path="windowsSetup.selectCableInput">
+                        <kbd slot="cableInput">CABLE Input</kbd>
+                      </i18n>
                     </div>
                     <v-row justify="center">
                       <v-col cols="auto">
@@ -108,7 +125,10 @@
                   </v-card-text>
                 </v-card>
 
-                <v-btn :disabled="true">Finished</v-btn>
+                <v-btn :disabled="true">
+                  <v-icon left>mdi-flag-checkered</v-icon>
+                  {{ $t('windowsSetup.finished') }}
+                </v-btn>
               </v-stepper-content>
             </v-stepper-items>
           </v-stepper>

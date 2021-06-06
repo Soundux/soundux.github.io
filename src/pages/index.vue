@@ -5,7 +5,7 @@
         <img src="/icon.svg" alt="Logo" class="mb-5" width="150" />
       </div>
       <div class="text-center text-h3 mb-3">Soundux</div>
-      <div class="text-center mb-3 grey--text text--lighten-1">A cross-platform soundboard 🔊</div>
+      <div class="text-center mb-3 grey--text text--lighten-1">{{ $t('index.tagline') }} 🔊</div>
       <v-row justify="center" dense>
         <v-col cols="auto">
           <v-btn color="blue" href="https://discord.gg/4HwSGN4Ec2" target="_blank" x-large width="150">
@@ -16,7 +16,7 @@
         <v-col cols="auto">
           <v-btn color="primary" nuxt to="/download" x-large width="150">
             <v-icon left>mdi-download</v-icon>
-            Download
+            {{ $t('index.download') }}
           </v-btn>
         </v-col>
         <v-col cols="auto">
@@ -29,7 +29,7 @@
 
       <v-row justify="center">
         <v-col cols="auto" class="text-center">
-          It has a universal architecture and therefore works with a variety of applications
+          {{ $t('index.universalArchitecture') }}
         </v-col>
       </v-row>
       <v-row justify="center">
@@ -63,26 +63,26 @@
         </v-col>
         <v-col cols="auto">
           <v-icon left>mdi-dots-horizontal</v-icon>
-          And many more
+          {{ $t('index.andManyMore') }}
         </v-col>
       </v-row>
       <v-row justify="center">
         <v-col cols="auto">
           <v-btn color="yellow darken-2" light nuxt to="/features" x-large>
             <v-icon left>mdi-star-circle-outline</v-icon>
-            See all features
+            {{ $t('index.seeAllFeatures') }}
           </v-btn>
         </v-col>
         <v-col cols="auto">
           <v-btn color="yellow darken-3" light nuxt to="/screenshots" x-large>
             <v-icon left>mdi-image</v-icon>
-            Screenshots
+            {{ $t('index.screenshots') }}
           </v-btn>
         </v-col>
       </v-row>
       <template v-if="$store.getters.selectedOS && $store.getters.selectedOS.name === 'Linux'">
         <v-divider class="my-5"></v-divider>
-        <v-row justify="center">Native support for</v-row>
+        <v-row justify="center">{{ $t('index.nativeSupportFor') }}</v-row>
         <v-row justify="center" align="center">
           <v-col cols="auto">
             <v-tooltip bottom>

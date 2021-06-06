@@ -4,11 +4,11 @@
       <v-card class="mt-3">
         <v-card-title class="text-h5">
           <v-icon left>mdi-image</v-icon>
-          Screenshots
+          {{ $t('index.screenshots') }}
         </v-card-title>
         <v-card-text>
           <v-row justify="center" class="text-subtitle-1">
-            Here you can see screenshots of the current version
+            {{ $t('screenshots.hint') }}
           </v-row>
           <v-row justify="center" class="my-5">
             <v-col v-for="screenshot in screenshots" :key="screenshot" cols="auto">

@@ -71,7 +71,14 @@ const config: NuxtConfig = {
     },
   },
 
-  i18n: {},
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json' },
+      { code: 'de', iso: 'de-DE', file: 'de.json' },
+    ],
+    langDir: 'locales/',
+    defaultLocale: 'de',
+  },
 
   vue: {
     config: {

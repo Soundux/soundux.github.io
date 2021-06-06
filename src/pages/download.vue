@@ -4,11 +4,11 @@
       <v-card class="mt-3 pb-3">
         <v-card-title>
           <v-icon left>mdi-download</v-icon>
-          Download Soundux now
+          {{ $t('download.downloadNow') }}
         </v-card-title>
         <v-card-text>
           <v-alert :value="!!error" text type="error" elevation="5" dense transition="scale-transition">
-            <h3 class="text-h5">Failed to fetch information from GitHub</h3>
+            <h3 class="text-h5">{{ $t('download.failedToFetch') }}</h3>
             <div>
               {{ error }}
             </div>
@@ -22,7 +22,7 @@
                   target="_blank"
                 >
                   <v-icon left>mdi-github</v-icon>
-                  Visit our GitHub
+                  {{ $t('download.visitOurGitHub') }}
                 </v-btn>
               </v-col>
               <v-spacer></v-spacer>
@@ -30,38 +30,40 @@
           </v-alert>
 
           <template v-if="latestRelease">
-            <span class="text-h6">Latest version: {{ latestRelease.tag_name }}</span>
+            <span class="text-h6">{{ $t('download.latestVersion') }}: {{ latestRelease.tag_name }}</span>
             <br />
-            <span>Released {{ new Date(latestRelease.published_at).toLocaleString() }}</span>
+            <span>
+              {{ $t('download.released') }}
+              {{ new Date(latestRelease.published_at).toLocaleString() }}
+            </span>
           </template>
           <v-skeleton-loader v-else type="article, actions"></v-skeleton-loader>
 
           <template v-if="$store.getters.selectedOS">
             <div v-if="$store.getters.selectedOS.name === 'macOS'" class="mt-5">
-              Soundux is currently not supported on your operating system
+              {{ $t('download.notSupported') }}
             </div>
             <div v-else class="mt-5">
-              Soundux is offered as different flavors for your operating system.
+              {{ $t('download.differentFlavors') }}
             </div>
-            <div>If we have detected the wrong operating system just change it on the top right.</div>
+            <div>{{ $t('download.wrongOS') }}</div>
 
             <v-row justify="center" class="mt-5">
               <template v-if="$store.getters.selectedOS.name === 'Windows'">
                 <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowSetup" width="250">
+                  <v-btn color="primary" x-large :href="windowSetup" width="300">
                     <v-icon left>mdi-wizard-hat</v-icon>
-                    <div>Download Setup</div>
+                    <div>{{ $t('download.windows.downloadSetup') }}</div>
                   </v-btn>
                 </v-col>
                 <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowsPortable" width="250">
+                  <v-btn color="primary" x-large :href="windowsPortable" width="300">
                     <v-icon left>mdi-briefcase-outline</v-icon>
-                    <div>Download Portable</div>
+                    <div>{{ $t('download.windows.downloadPortable') }}</div>
                   </v-btn>
                 </v-col>
                 <v-alert type="info" class="text-center mt-3 mx-4" dense>
-                  We highly recommend you downloading the Setup as it automatically downloads and
-                  installs the required dependencies (WebView2 Runtime and VB-Cable).
+                  {{ $t('download.windows.recommendSetup') }}
                 </v-alert>
                 <v-alert
                   outlined
@@ -71,10 +73,9 @@
                   transition="scale-transition"
                   class="mx-5"
                 >
-                  <h3 class="text-h5">Important!</h3>
+                  <h3 class="text-h5">{{ $t('download.windows.important') }}</h3>
                   <div>
-                    Please click the button below or watch the video for important information about
-                    Windows support
+                    {{ $t('download.windows.importantInformation') }}
                   </div>
                   <v-row justify="center" class="my-2">
                     <iframe
@@ -92,7 +93,7 @@
                     <v-col class="shrink">
                       <v-btn color="red" nuxt to="/windows-setup">
                         <v-icon left>mdi-chevron-right</v-icon>
-                        Additional Setup steps
+                        {{ $t('download.windows.additionalSteps') }}
                         <v-icon right>mdi-alert</v-icon>
                       </v-btn>
                     </v-col>
@@ -102,9 +103,9 @@
               </template>
               <template v-else-if="$store.getters.selectedOS.name === 'macOS'">
                 <v-col cols="auto">
-                  <v-btn class="text-none" :disabled="true" color="primary" x-large>
+                  <v-btn :disabled="true" color="primary" x-large>
                     <v-icon left>mdi-download</v-icon>
-                    <div>Download for macOS<br />(coming soon™)</div>
+                    <div>Download for macOS</div>
                   </v-btn>
                 </v-col>
               </template>
@@ -122,7 +123,7 @@
                         />
                       </a>
                     </v-row>
-                    <v-row justify="center" dense>For all distros with Flatpak support</v-row>
+                    <v-row justify="center" dense>{{ $t('download.linux.flatpak') }}</v-row>
                   </v-col>
                   <v-col cols="auto">
                     <v-row justify="center" align-content="center" align="center" no-gutters dense>
@@ -136,7 +137,7 @@
                         />
                       </a>
                     </v-row>
-                    <v-row justify="center" dense>For all distros with Snap support</v-row>
+                    <v-row justify="center" dense>{{ $t('download.linux.snap') }}</v-row>
                   </v-col>
                 </v-row>
                 <v-row justify="center">
@@ -158,7 +159,7 @@
                             <v-icon @click="archModal = false">mdi-close</v-icon>
                           </v-card-title>
                           <v-card-text>
-                            Install Soundux with your favorite AUR helper
+                            {{ $t('download.linux.archLinux') }}
                             <br />
                             <code class="d-block text-center">
                               <NeoTextra
@@ -180,7 +181,7 @@
                               target="_blank"
                             >
                               <v-icon left>mdi-arch</v-icon>
-                              <div>Visit AUR page</div>
+                              <div>{{ $t('download.linux.aurPage') }}</div>
                             </v-btn>
                             <v-spacer></v-spacer>
                           </v-card-actions>
@@ -206,15 +207,18 @@
                             <v-icon @click="debianModal = false">mdi-close</v-icon>
                           </v-card-title>
                           <v-card-text>
-                            Install Soundux on Debian
-                            <div class="subtitle-1">via DEB package (no automatic updates)</div>
+                            {{ $t('download.linux.debian') }}
+                            <div class="subtitle-1">
+                              {{ $t('download.linux.debPackage') }}
+                              ({{ $t('download.linux.noAutomaticUpdates') }})
+                            </div>
                             <code>sudo dpkg -i {{ debPackage[1] }}</code>
                           </v-card-text>
                           <v-card-actions>
                             <v-spacer></v-spacer>
                             <v-btn color="red darken-1" x-large dark :href="debPackage[0]">
                               <v-icon left>mdi-debian</v-icon>
-                              <div>Download DEB</div>
+                              <div>{{ $t('download.linux.downloadDeb') }}</div>
                             </v-btn>
                             <v-spacer></v-spacer>
                           </v-card-actions>
@@ -240,20 +244,28 @@
                             <v-icon @click="ubuntuModal = false">mdi-close</v-icon>
                           </v-card-title>
                           <v-card-text>
-                            Install Soundux on Ubuntu
-                            <div class="subtitle-1">
-                              via
-                              <a href="https://github.com/pacstall/pacstall" target="_blank">Pacstall</a>
-                            </div>
+                            {{ $t('download.linux.ubuntu') }}
+                            <i18n tag="div" class="subtitle-1" path="download.linux.pacstall">
+                              <a
+                                href="https://github.com/pacstall/pacstall"
+                                target="_blank"
+                                slot="pacstall"
+                              >
+                                Pacstall
+                              </a>
+                            </i18n>
                             <code>sudo pacstall -I soundux</code>
-                            <div class="subtitle-1">via DEB package (no automatic updates)</div>
+                            <div class="subtitle-1">
+                              {{ $t('download.linux.debPackage') }}
+                              ({{ $t('download.linux.noAutomaticUpdates') }})
+                            </div>
                             <code>sudo dpkg -i {{ debPackage[1] }}</code>
                           </v-card-text>
                           <v-card-actions>
                             <v-spacer></v-spacer>
                             <v-btn color="orange darken-2" x-large dark :href="debPackage[0]">
                               <v-icon left>mdi-ubuntu</v-icon>
-                              <div>Download DEB</div>
+                              <div>{{ $t('download.linux.downloadDeb') }}</div>
                             </v-btn>
                             <v-spacer></v-spacer>
                           </v-card-actions>
@@ -279,30 +291,33 @@
                             <v-icon @click="fedoraModal = false">mdi-close</v-icon>
                           </v-card-title>
                           <v-card-text>
-                            Install Soundux on Fedora
-                            <div class="subtitle-1">
-                              via
+                            {{ $t('download.linux.fedora') }}
+                            <i18n tag="div" class="subtitle-1" path="download.linux.copr">
                               <a
                                 href="https://copr.fedorainfracloud.org/coprs/rivenirvana/soundux/"
                                 target="_blank"
+                                slot="copr"
                               >
                                 COPR
                               </a>
-                            </div>
+                            </i18n>
                             <div>
                               <code>sudo dnf copr enable rivenirvana/soundux</code>
                             </div>
                             <div>
                               <code>sudo dnf install soundux</code>
                             </div>
-                            <div class="text-subtitle-1">via RPM package (no automatic updates)</div>
+                            <div class="text-subtitle-1">
+                              {{ $t('download.linux.rpmPackage') }}
+                              ({{ $t('download.linux.noAutomaticUpdates') }})
+                            </div>
                             <code>sudo dnf install {{ rpmPackage[1] }}</code>
                           </v-card-text>
                           <v-card-actions>
                             <v-spacer></v-spacer>
                             <v-btn color="blue darken-3" x-large dark :href="rpmPackage[0]">
                               <v-icon left>mdi-fedora</v-icon>
-                              <div>Download RPM</div>
+                              <div>{{ $t('download.linux.downloadRpm') }}</div>
                             </v-btn>
                             <v-spacer></v-spacer>
                           </v-card-actions>
@@ -316,7 +331,9 @@
           </template>
 
           <details v-if="latestRelease">
-            <summary role="button" class="text-h6 cursor-pointer mt-6">Changelog</summary>
+            <summary role="button" class="text-h6 cursor-pointer mt-6">
+              {{ $t('download.changelog') }}
+            </summary>
             <RenderMarkdown :source="latestRelease.body" :options="{ html: true }" />
           </details>
         </v-card-text>
@@ -325,9 +342,11 @@
       <v-card class="mt-3 pb-3" rounded>
         <v-card-title>
           <v-icon left>mdi-chart-line</v-icon>
-          Downloads per version
+          {{ $t('download.downloadsPerVersion') }}
         </v-card-title>
-        <v-card-subtitle>Latest 10 versions</v-card-subtitle>
+        <v-card-subtitle>
+          {{ $t('download.latestVersions', { num: 10 }) }}
+        </v-card-subtitle>
         <v-card-text>
           <v-sparkline
             v-if="oldToNewReleases.length > 0"
@@ -349,11 +368,10 @@
       <v-card class="mt-3 pb-3" rounded>
         <v-card-title>
           <v-icon left>mdi-arrow-down-bold-circle-outline</v-icon>
-          Old versions
+          {{ $t('download.olderVersions') }}
         </v-card-title>
         <v-card-text>
-          If you have problems with the latest version they might not occur in an old version. You can
-          try out older versions here:
+          {{ $t('download.tryOlderVersions') }}
           <v-list v-if="oldReleases.length > 0" class="text-center">
             <v-list-item v-for="release in oldReleases" :key="release.id">
               <v-list-item-content>
@@ -361,7 +379,7 @@
                   <a :href="release.html_url" target="_blank">Version {{ release.tag_name }}</a>
                 </v-list-item-title>
                 <v-list-item-subtitle class="text-wrap">
-                  Released {{ new Date(release.published_at).toLocaleString() }}
+                  {{ $t('download.released') }} {{ new Date(release.published_at).toLocaleString() }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>

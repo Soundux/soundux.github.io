@@ -4,7 +4,7 @@
       <v-card class="mt-3 pb-3">
         <v-card-title class="text-h5">
           <v-icon left>mdi-frequently-asked-questions</v-icon>
-          Frequently asked questions
+          {{ $t('faq.title') }}
         </v-card-title>
         <v-card-text>
           <v-list>
@@ -12,11 +12,13 @@
               <v-list-item-content>
                 <v-list-item-title class="text-wrap">
                   <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
-                  Discord asks me if I want to change my input device, what to do?
+                  {{ $t('faq.discordInputDevice.question') }}
                 </v-list-item-title>
                 <v-list-item-subtitle class="text-wrap">
                   <v-icon left color="primary">mdi-information-outline</v-icon>
-                  Click on <kbd>Never ask again</kbd>
+                  <i18n path="faq.discordInputDevice.answer">
+                    <kbd slot="neverAskAgain">{{ $t('faq.discordInputDevice.neverAskAgain') }}</kbd>
+                  </i18n>
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -25,12 +27,17 @@
               <v-list-item-content>
                 <v-list-item-title class="text-wrap">
                   <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
-                  Why is the audio quality in Discord so bad?
+                  {{ $t('faq.discordAudioQuality.question') }}
                 </v-list-item-title>
                 <v-list-item-subtitle class="text-wrap">
                   <v-icon left color="primary">mdi-information-outline</v-icon>
-                  Try disabling <kbd>Echo Cancellation</kbd> and <kbd>Noise Reduction</kbd> in Discord's
-                  settings under <kbd>Voice & Video</kbd>
+                  <i18n path="faq.discordAudioQuality.answer">
+                    <kbd slot="echoCancellation">
+                      {{ $t('faq.discordAudioQuality.echoCancellation') }}
+                    </kbd>
+                    <kbd slot="noiseReduction">{{ $t('faq.discordAudioQuality.noiseReduction') }}</kbd>
+                    <kbd slot="voiceAndVideo">{{ $t('faq.discordAudioQuality.voiceAndVideo') }}</kbd>
+                  </i18n>
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -39,11 +46,11 @@
               <v-list-item-content>
                 <v-list-item-title class="text-wrap">
                   <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
-                  I can't hear the sounds
+                  {{ $t('faq.cantHearSounds.question') }}
                 </v-list-item-title>
                 <v-list-item-subtitle class="text-wrap">
                   <v-icon left color="primary">mdi-information-outline</v-icon>
-                  Check if your device default is set properly
+                  {{ $t('faq.cantHearSounds.answer') }}
                 </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -52,14 +59,14 @@
               <v-list-item-content>
                 <v-list-item-title class="text-wrap">
                   <v-icon left color="grey lighten-1">mdi-help-circle-outline</v-icon>
-                  When I try to pass-through an application it fails
+                  {{ $t('faq.passThroughFails.question') }}
                 </v-list-item-title>
                 <v-list-item-subtitle class="text-wrap">
                   <div class="mb-2">
                     <v-icon left color="primary">mdi-information-outline</v-icon>
-                    Some apps use OpenAL for audio which may prevent this. To solve this create a file
-                    named
-                    <code>.alsoftrc</code> in your home folder with the following contents:
+                    <i18n path="faq.passThroughFails.answer">
+                      <code slot="fileName">.alsoftrc</code>
+                    </i18n>
                   </div>
                   <pre style="white-space: pre-line">
                     [pulse]
@@ -69,7 +76,6 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
-          <div class="text-center">more to come...</div>
         </v-card-text>
       </v-card>
     </v-col>

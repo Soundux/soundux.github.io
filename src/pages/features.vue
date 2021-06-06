@@ -4,17 +4,17 @@
       <v-card class="mt-3">
         <v-card-title class="text-h5">
           <v-icon left>mdi-star-circle-outline</v-icon>
-          Features
+          {{ $t('features.title') }}
         </v-card-title>
         <v-card-text>
-          <p>Click on the different features to reveal additional information about them</p>
+          <p>{{ $t('features.clickToShowAdditionalInformation') }}</p>
           <v-list nav dense>
             <v-list-group :value="true">
               <template #activator>
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-theme-light-dark</v-icon>
-                    Dark and light theme
+                    {{ $t('features.darkAndLightTheme.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
@@ -26,7 +26,9 @@
                     :aspect-ratio="{ width: 1360, height: 795 }"
                   ></NeoImageCompare>
                   <v-col class="text-center">
-                    <v-list-item-subtitle class="text-wrap">Pick your poison 👀</v-list-item-subtitle>
+                    <v-list-item-subtitle class="text-wrap">
+                      {{ $t('features.darkAndLightTheme.description') }} 👀
+                    </v-list-item-subtitle>
                   </v-col>
                 </v-list-item-content>
               </v-list-item>
@@ -36,7 +38,7 @@
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-folder</v-icon>
-                    Folder tabs
+                    {{ $t('features.folderTabs.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
@@ -51,8 +53,7 @@
                       />
                       <br />
                       <span>
-                        You don't have to add single sounds. Just put them in a folder 📂 and add it as a
-                        tab. It will automatically populate with all the supported audio formats 🎧
+                        {{ $t('features.folderTabs.description') }}
                       </span>
                     </v-col>
                   </v-list-item-subtitle>
@@ -64,7 +65,7 @@
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-play-pause</v-icon>
-                    Media controls
+                    {{ $t('features.mediaControls.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
@@ -81,8 +82,7 @@
                       />
                       <br />
                       <span>
-                        We have individual media controls for each playing sound. You can play/pause ⏯,
-                        seek 🔼, repeat 🔂 or stop ⏹ them.
+                        {{ $t('features.mediaControls.description') }}
                       </span>
                     </v-col>
                   </v-list-item-subtitle>
@@ -94,16 +94,19 @@
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-headphones</v-icon>
-                    Supports a variety of audio formats
+                    {{ $t('features.audioFormats.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-subtitle class="text-wrap">
-                    As we make use of
-                    <a href="https://miniaud.io/" target="_blank" rel="noopener">miniaudio</a>
-                    we support common audio formats like mp3, wav, flac 🎛
+                    <i18n path="features.audioFormats.description">
+                      <a href="https://miniaud.io/" target="_blank" rel="noopener" slot="miniaudio"
+                        >miniaudio</a
+                      >
+                    </i18n>
+                    🎛
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -113,7 +116,7 @@
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-magnify</v-icon>
-                    Sound search
+                    {{ $t('features.soundSearch.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
@@ -130,8 +133,12 @@
                       />
                       <br />
                       <span>
-                        A global search for all tabs 🔎 <br />
-                        Can also be opened with <code>CTRL</code> + <code>F</code>
+                        {{ $t('features.soundSearch.description') }} 🔎
+                        <br />
+                        <i18n path="features.soundSearch.description2">
+                          <code slot="ctrl">{{ $t('input.ctrl') }}</code>
+                          <code slot="f">F</code>
+                        </i18n>
                       </span>
                     </v-col>
                   </v-list-item-subtitle>
@@ -143,7 +150,7 @@
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-gamepad-square-outline</v-icon>
-                    Emulated Launchpad mode
+                    {{ $t('features.emulatedLaunchpad.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
@@ -160,9 +167,9 @@
                       />
                       <br />
                       <span>
-                        An emulated launchpad on your keyboard ⌨️ <br />
-                        Press the corresponding key seen in the top right to play a sound <br />
-                        Navigate pages with your arrow keys
+                        {{ $t('features.emulatedLaunchpad.description') }} ⌨️ <br />
+                        {{ $t('features.emulatedLaunchpad.description2') }} <br />
+                        {{ $t('features.emulatedLaunchpad.description3') }}
                       </span>
                     </v-col>
                   </v-list-item-subtitle>
@@ -174,15 +181,14 @@
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-keyboard</v-icon>
-                    Global hotkeys
+                    {{ $t('features.globalHotkeys.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-subtitle class="text-wrap">
-                    ⌨ You can set hotkeys for each sound and to stop all sounds. There is also an option
-                    to only trigger hotkeys from the currently selected tab
+                    ⌨ {{ $t('features.globalHotkeys.description') }}
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -192,7 +198,7 @@
                 <v-list-item-content>
                   <v-list-item-title>
                     <v-icon left>mdi-power-plug</v-icon>
-                    Application pass-through
+                    {{ $t('features.passThrough.title') }}
                   </v-list-item-title>
                 </v-list-item-content>
               </template>
@@ -210,9 +216,12 @@
                       </figure>
                       <br />
                       <span>
-                        🔌 Application pass through allows you to redirect any application's sound to
-                        another. You can use it as a workaround for Discord's share audio feature<br />
-                        Can also be opened with <code>CTRL</code> + <code>G</code>
+                        🔌 {{ $t('features.passThrough.description') }}
+                        <br />
+                        <i18n path="features.passThrough.description2">
+                          <code slot="ctrl">{{ $t('input.ctrl') }}</code>
+                          <code slot="g">G</code>
+                        </i18n>
                       </span>
                     </v-col>
                   </v-list-item-subtitle>
