@@ -18,16 +18,16 @@
     "title": "Funktionen",
     "clickToShowAdditionalInformation": "Klicken Sie auf die verschiedenen Funktionen, um zusätzliche Informationen über sie zu erhalten",
     "darkAndLightTheme": {
-      "title":"Dunkles und helles Design",
+      "title": "Dunkles und helles Design",
       "description": "Wählen Sie Ihr Gift"
     },
     "folderTabs": {
       "title": "Ordner-Tabs",
-      "description": "Sie müssen keine einzelnen Sounds hinzufügen. Legen Sie sie einfach in einen Ordner \uD83D\uDCC2 und fügen Sie ihn als Tab hinzu. Er wird automatisch mit allen unterstützten Audioformaten befüllt \uD83C\uDFA7"
+      "description": "Sie müssen keine einzelnen Sounds hinzufügen. Legen Sie sie einfach in einen Ordner 📂 und fügen Sie ihn als Tab hinzu. Er wird automatisch mit allen unterstützten Audioformaten befüllt 🎧"
     },
     "mediaControls": {
       "title": "Medien-Steuerung",
-      "description": "Wir haben individuelle Medien-Steuerungen für jeden wiedergegebenen Ton. Sie können sie abspielen/pausieren ⏯, spulen \uD83D\uDD3C, wiederholen \uD83D\uDD02 oder anhalten ⏹."
+      "description": "Wir haben individuelle Medien-Steuerungen für jeden wiedergegebenen Ton. Sie können sie abspielen/pausieren ⏯, spulen 🔼, wiederholen 🔂 oder anhalten ⏹."
     },
     "audioFormats": {
       "title": "Unterstützt eine Vielzahl von Audioformaten",
@@ -48,7 +48,7 @@
       "title": "Globale Hotkeys",
       "description": "Sie können Hotkeys für jeden Sound und zum Anhalten aller Sounds festlegen. Es gibt auch eine Option, um nur Hotkeys des aktuell ausgewählten Tabs auszulösen"
     },
-    "passThrough":{
+    "passThrough": {
       "title": "Anwendungen durchreichen",
       "description": "Mit der Durchreichen-Option können Sie den Ton einer beliebigen Anwendung auf eine andere umleiten. Sie können es als Workaround für die \"Audio freigeben\" Funktion von Discord verwenden",
       "description2": "Kann auch mit {ctrl} + {g} geöffnet werden"
