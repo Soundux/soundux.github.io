@@ -50,14 +50,14 @@
 
             <v-row justify="center" class="mt-5">
               <template v-if="$store.getters.selectedOS.name === 'Windows'">
-                <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowSetup" width="300">
+                <v-col>
+                  <v-btn color="primary" x-large :href="windowSetup" width="100%">
                     <v-icon left>mdi-wizard-hat</v-icon>
                     <div>{{ $t('download.windows.downloadSetup') }}</div>
                   </v-btn>
                 </v-col>
-                <v-col cols="auto">
-                  <v-btn color="primary" x-large :href="windowsPortable" width="300">
+                <v-col>
+                  <v-btn color="primary" x-large :href="windowsPortable" width="100%">
                     <v-icon left>mdi-briefcase-outline</v-icon>
                     <div>{{ $t('download.windows.downloadPortable') }}</div>
                   </v-btn>
