@@ -10,11 +10,15 @@ Website for [Soundux](https://github.com/Soundux/Soundux)
 > ⚠️ The repo's `master` branch contains the source files for the site. The static files are in the [`gh-pages` branch](https://github.com/Soundux/soundux.github.io/tree/gh-pages)! 
 
 ### Tech stack
-[![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?style=for-the-badge&logo=nuxt.js&logoColor=fff)](https://nuxtjs.org/)
+[![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?style=for-the-badge&logo=nuxt-dot-js&logoColor=fff)](https://nuxtjs.org/)
 [![Vuetify](https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=fff)](https://vuetifyjs.com/)
 [![Material Design Icons](https://img.shields.io/badge/Material%20Design%20Icons-2196F3?style=for-the-badge&logo=material-design-icons&logoColor=fff)](https://materialdesignicons.com/)
 
-![NuxtJS](assets/undraw_nuxt_js_0fq9.svg)
+<div align="center">
+  <a href="https://hosted.weblate.org/engage/soundux/">
+    <img src="https://hosted.weblate.org/widgets/soundux/-/website/open-graph.png" alt="Translation status" />
+  </a>
+</div>
 
 ## Build Setup
 
