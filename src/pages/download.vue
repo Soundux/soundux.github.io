@@ -91,7 +91,7 @@
                   <v-row class="my-2">
                     <v-spacer></v-spacer>
                     <v-col class="shrink">
-                      <v-btn color="red" nuxt to="/windows-setup">
+                      <v-btn color="red" dark nuxt to="/windows-setup">
                         <v-icon left>mdi-chevron-right</v-icon>
                         {{ $t('download.windows.additionalSteps') }}
                         <v-icon right>mdi-alert</v-icon>
