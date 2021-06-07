@@ -32,9 +32,9 @@
                 <v-list-item-subtitle class="text-wrap">
                   <v-icon left color="primary">mdi-information-outline</v-icon>
                   <i18n path="faq.discordAudioQuality.answer">
-                    <kbd slot="echoCancellation">
-                      {{ $t('faq.discordAudioQuality.echoCancellation') }}
-                    </kbd>
+                    <kbd slot="echoCancellation">{{
+                      $t('faq.discordAudioQuality.echoCancellation')
+                    }}</kbd>
                     <kbd slot="noiseReduction">{{ $t('faq.discordAudioQuality.noiseReduction') }}</kbd>
                     <kbd slot="voiceAndVideo">{{ $t('faq.discordAudioQuality.voiceAndVideo') }}</kbd>
                   </i18n>

@@ -75,6 +75,7 @@ const config: NuxtConfig = {
     locales: [
       { code: 'en', iso: 'en-US', file: 'en.json' },
       { code: 'de', iso: 'de-DE', file: 'de.json' },
+      { code: 'fr', iso: 'fr-FR', file: 'fr.json' },
     ],
     lazy: true,
     langDir: 'locales/',
