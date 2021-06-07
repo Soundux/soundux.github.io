@@ -1,18 +1,18 @@
 {
   "index": {
     "tagline": "Ein plattformübergreifendes Soundboard",
-    "download": "Download",
+    "download": "Herunterladen",
     "universalArchitecture": "Es hat eine universelle Architektur und funktioniert daher mit einer Vielzahl von Anwendungen",
     "andManyMore": "Und viele weitere",
     "seeAllFeatures": "Alle Funktionen anzeigen",
-    "screenshots": "Screenshots",
+    "screenshots": "Bildschirmfotos",
     "nativeSupportFor": "Native Unterstützung für"
   },
   "input": {
     "ctrl": "STRG"
   },
   "screenshots": {
-    "hint": "Hier sehen Sie Screenshots der aktuellen Version"
+    "hint": "Hier sehen Sie Bildschirmfotos der aktuellen Version"
   },
   "features": {
     "title": "Funktionen",
@@ -50,7 +50,7 @@
     },
     "passThrough": {
       "title": "Anwendungen durchreichen",
-      "description": "Mit der Durchreichen-Option können Sie den Ton einer beliebigen Anwendung auf eine andere umleiten. Sie können es als Workaround für die \"Audio freigeben\" Funktion von Discord verwenden",
+      "description": "Mit der Durchreichen-Option können Sie den Ton einer beliebigen Anwendung auf eine andere umleiten. Sie können es als Workaround für die „Audio freigeben“-Funktion von Discord verwenden",
       "description2": "Kann auch mit {ctrl} + {g} geöffnet werden"
     }
   },
@@ -68,7 +68,7 @@
       "downloadPortable": "Portable herunterladen",
       "recommendSetup": "Wir empfehlen Ihnen dringend, das Setup herunterzuladen, da es die benötigten Abhängigkeiten (WebView2 Runtime und VB-Cable) automatisch herunterlädt und installiert.",
       "important": "Wichtig!",
-      "importantInformation": "Bitte klicken Sie auf den Button unten oder sehen Sie sich das Video (auf Englisch) an, um wichtige Informationen zum Windows-Support zu erhalten",
+      "importantInformation": "Bitte klicken Sie auf die Schaltfläche unten oder sehen Sie sich das Video (auf Englisch) an, um wichtige Informationen zum Windows-Support zu erhalten",
       "additionalSteps": "Zusätzliche Setup-Schritte"
     },
     "linux": {
@@ -87,7 +87,7 @@
       "rpmPackage": "per RPM-Paket",
       "downloadRpm": "RPM-Paket herunterladen"
     },
-    "changelog": "Changelog",
+    "changelog": "Änderungsprotokoll",
     "downloadsPerVersion": "Downloads pro Version",
     "latestVersions": "Neueste {num} Versionen",
     "olderVersions": "Ältere Versionen",
