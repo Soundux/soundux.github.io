@@ -102,7 +102,7 @@
                 <v-list-item-content>
                   <v-list-item-subtitle class="text-wrap">
                     <i18n path="features.audioFormats.description">
-                      <a href="https://miniaud.io/" target="_blank" rel="noopener" slot="miniaudio"
+                      <a slot="miniaudio" href="https://miniaud.io/" target="_blank" rel="noopener"
                         >miniaudio</a
                       >
                     </i18n>
