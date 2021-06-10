@@ -1,1 +1,17 @@
-{}
+{
+  "features": {
+    "audioFormats": {
+      "title": "Поддерживает различные аудиоформаты"
+    },
+    "darkAndLightTheme": {
+      "title": "Темная и светлая тема"
+    },
+    "title": "Функции"
+  },
+  "index": {
+    "screenshots": "Скриншоты",
+    "seeAllFeatures": "Посмотреть все функции",
+    "andManyMore": "И многое другое",
+    "download": "Скачать"
+  }
+}
