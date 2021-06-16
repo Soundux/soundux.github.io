@@ -50,6 +50,7 @@ const config: NuxtConfig = {
 
   plausible: {
     domain: 'soundux.rocks',
+    apiHost: 'https://analytics.soundux.rocks',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
