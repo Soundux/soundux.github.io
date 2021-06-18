@@ -75,5 +75,8 @@
     },
     "latestVersion": "Siste versjon",
     "visitOurGitHub": "Besøk GitHub-siden vår"
+  },
+  "input": {
+    "ctrl": "CTRL"
   }
 }
