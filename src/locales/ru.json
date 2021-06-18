@@ -13,5 +13,8 @@
     "seeAllFeatures": "Посмотреть все функции",
     "andManyMore": "И многое другое",
     "download": "Скачать"
+  },
+  "input": {
+    "ctrl": "CTRL"
   }
 }
