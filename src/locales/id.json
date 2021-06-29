@@ -1,1 +1,28 @@
-{}
+{
+  "features": {
+    "folderTabs": {
+      "description": "Anda tidak perlu menambahkan suara satu-persatu. Letakkan saja di sebuah folder 📂 dan tambahkan folder tersebut sebagai tab. Soundux akan mengisinya secara otomatis dengan semua format audio yang didukung 🎧"
+    },
+    "darkAndLightTheme": {
+      "description": "Pilih racunmu",
+      "title": "Tema gelap dan cerah"
+    },
+    "clickToShowAdditionalInformation": "Klik pada fitur-fitur yang berbeda untuk menampilkan informasi tambahan tentang mereka",
+    "title": "Fitur-fitur"
+  },
+  "screenshots": {
+    "hint": "Di sini Anda dapat melihat tangkapan-tangkapan layar dari versi saat ini"
+  },
+  "input": {
+    "ctrl": "CTRL"
+  },
+  "index": {
+    "nativeSupportFor": "Dukungan native untuk",
+    "screenshots": "Tangkapan Layar",
+    "seeAllFeatures": "Lihat semua fitur",
+    "andManyMore": "Dan banyak lagi",
+    "universalArchitecture": "Soundux memiliki arsitektur universal dan karenanya bekerja dengan berbagai aplikasi",
+    "download": "Unduh",
+    "tagline": "Papan suara antar-platform"
+  }
+}
