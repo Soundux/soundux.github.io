@@ -1,9 +1,24 @@
 {
   "index": {
     "download": "Ladda ner",
-    "tagline": "En cross-platform soundboard"
+    "tagline": "En cross-platform soundboard",
+    "nativeSupportFor": "Inbyggt stöd för",
+    "screenshots": "Skärmbilder",
+    "seeAllFeatures": "Se alla funktioner",
+    "andManyMore": "Och många fler",
+    "universalArchitecture": "Den har en universell arkitektur och fungerar därmed i många applikationer"
   },
   "input": {
     "ctrl": "CTRL"
+  },
+  "features": {
+    "darkAndLightTheme": {
+      "title": "Mörkt och ljust tema"
+    },
+    "clickToShowAdditionalInformation": "Klicka på de olika funktionerna för att få mer information om dem",
+    "title": "Funktioner"
+  },
+  "screenshots": {
+    "hint": "Här kan du se skärmdumpar av den senaste versionen"
   }
 }
