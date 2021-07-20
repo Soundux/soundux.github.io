@@ -59,7 +59,7 @@
     "failedToFetch": "Informationen von GitHub konnten nicht abgerufen werden",
     "visitOurGitHub": "Besuche unsere GitHub Seite",
     "latestVersion": "Neueste Version",
-    "released": "Veröffentlicht",
+    "released": "Veröffentlicht am",
     "notSupported": "Soundux wird derzeit für Ihr Betriebssystem nicht unterstützt",
     "differentFlavors": "Soundux wird in verschiedenen Varianten für Ihr Betriebssystem angeboten.",
     "wrongOS": "Falls das falsche Betriebssystem erkannt wurde, ändern Sie es bitte oben rechts.",
