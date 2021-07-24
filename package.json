@@ -16,7 +16,7 @@
     "nuxt": "^2.15.7",
     "nuxt-i18n": "^6.27.1",
     "roboto-fontface": "*",
-    "vue-plausible": "^1.1.4"
+    "vue-plausible": "^1.2.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.7",
