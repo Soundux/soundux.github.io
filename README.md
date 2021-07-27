@@ -6,6 +6,7 @@ Website for [Soundux](https://github.com/Soundux/Soundux)
 
 [![License](https://img.shields.io/github/license/Soundux/soundux.github.io?style=for-the-badge)](https://github.com/Soundux/soundux.github.io/blob/master/LICENSE)
 [![Build](https://img.shields.io/github/workflow/status/Soundux/soundux.github.io/ci?&style=for-the-badge)](https://github.com/Soundux/soundux.github.io/actions?query=workflow%3A%22ci%22)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
 > ⚠️ The repo's `master` branch contains the source files for the site. The static files are in the [`gh-pages` branch](https://github.com/Soundux/soundux.github.io/tree/gh-pages)! 
 
