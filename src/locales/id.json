@@ -24,5 +24,35 @@
     "universalArchitecture": "Soundux memiliki arsitektur universal dan karenanya bekerja dengan berbagai aplikasi",
     "download": "Unduh",
     "tagline": "Papan suara antar-platform"
+  },
+  "download": {
+    "changelog": "Changelog",
+    "linux": {
+      "downloadRpm": "Unduh package RPM",
+      "rpmPackage": "melalui package RPM",
+      "copr": "melalui {copr}",
+      "fedora": "Pasang Soundux di Fedora",
+      "pacstall": "melalui {pacstall}",
+      "ubuntu": "Pasang Soundux di Ubuntu",
+      "downloadDeb": "Unduh package DEB",
+      "debPackage": "melalui package DEB",
+      "debian": "Pasang Soundux di Debian",
+      "aurPage": "Kunjungi halaman AUR",
+      "snap": "Untuk semua distro dengan dukungan Snap",
+      "flatpak": "Untuk semua distro dengan dukungan Flatpak",
+      "noAutomaticUpdates": "tidak ada pembaruan otomatis"
+    },
+    "windows": {
+      "additionalSteps": "Langkah-langkah penyiapan tambahan",
+      "importantInformation": "Harap mengklik tombol di bawah atau tonton video untuk informasi penting tentang dukungan Windows",
+      "important": "Penting!"
+    },
+    "wrongOS": "Jika sistem operasi yang terdeteksi salah, harap mengubahnya di sudut kanan atas.",
+    "notSupported": "Soundux saat ini tidak didukung oleh sistem operasi Anda",
+    "released": "Diluncurkan",
+    "latestVersion": "Versi paling mutakhir",
+    "visitOurGitHub": "Kunjungi halaman GitHub kami",
+    "failedToFetch": "Gagal mengambil informasi dari GitHub",
+    "downloadNow": "Unduh Soundux sekarang"
   }
 }
