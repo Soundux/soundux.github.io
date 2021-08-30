@@ -82,6 +82,11 @@
       "downloadDeb": "DEB-Paket herunterladen",
       "ubuntu": "Soundux auf Ubuntu installieren",
       "pacstall": "per {pacstall}",
+      "mpr": {
+        "title": "per {mpr}",
+        "dependencies": "Sie müssen {makedeb} und {tap} zuerst installieren. Siehe die {documentation}",
+        "documentation": "Dokumentation dafür"
+      },
       "fedora": "Soundux auf Fedora installieren",
       "copr": "per {copr}",
       "rpmPackage": "per RPM-Paket",

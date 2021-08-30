@@ -208,6 +208,7 @@
                           </v-card-title>
                           <v-card-text>
                             {{ $t('download.linux.debian') }}
+                            <DownloadMPR></DownloadMPR>
                             <div class="subtitle-1">
                               {{ $t('download.linux.debPackage') }}
                               ({{ $t('download.linux.noAutomaticUpdates') }})
@@ -255,6 +256,7 @@
                               </a>
                             </i18n>
                             <code>sudo pacstall -I soundux</code>
+                            <DownloadMPR></DownloadMPR>
                             <div class="subtitle-1">
                               {{ $t('download.linux.debPackage') }}
                               ({{ $t('download.linux.noAutomaticUpdates') }})

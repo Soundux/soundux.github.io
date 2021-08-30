@@ -82,6 +82,11 @@
       "downloadDeb": "Download DEB package",
       "ubuntu": "Install Soundux on Ubuntu",
       "pacstall": "via {pacstall}",
+      "mpr": {
+        "title": "via {mpr}",
+        "dependencies": "You need to install {makedeb} and {tap} first. See the {documentation}",
+        "documentation": "documentation for it"
+      },
       "fedora": "Install Soundux on Fedora",
       "copr": "via {copr}",
       "rpmPackage": "via RPM package",
