@@ -19,7 +19,8 @@
     "mediaControls": {
       "title": "Mediakontroller"
     },
-    "title": "Funksjoner"
+    "title": "Funksjoner",
+    "clickToShowAdditionalInformation": "Klikk på de forskjellige funksjonene for å avsløre ytterligere info om dem"
   },
   "screenshots": {
     "hint": "Her kan du se hvordan nyeste versjon ser ut"
@@ -27,28 +28,42 @@
   "index": {
     "seeAllFeatures": "Sjekk alle funksjonene",
     "screenshots": "Skjermavbildninger",
-    "download": "Last ned"
+    "download": "Last ned",
+    "nativeSupportFor": "Systemspesifikk støtte for",
+    "andManyMore": "Og mange flere",
+    "universalArchitecture": "Det har universell arkitektur, og fungerer derfor med en mengde programmer",
+    "tagline": "Et lydbrett for flere plattformer"
   },
   "faq": {
     "cantHearSounds": {
-      "question": "Jeg kan ikke høre lydene"
+      "question": "Jeg kan ikke høre lydene",
+      "answer": "Sjekk om din forvalgte utgangsenhet er satt opp riktig"
     },
     "discordAudioQuality": {
       "noiseReduction": "Støyreduksjon",
       "echoCancellation": "Ekko-kansellering",
-      "question": "Hvorfor er lydkvaliteten i Discord så dårlig?"
+      "question": "Hvorfor er lydkvaliteten i Discord så dårlig?",
+      "voiceAndVideo": "Stemme og video"
     },
     "discordInputDevice": {
       "neverAskAgain": "Aldri spør igjen",
-      "answer": "Klikk på {neverAskAgain}"
-    }
+      "answer": "Klikk på {neverAskAgain}",
+      "question": "Discord spør meg om jeg vil endre min inngangsenhet, hva gjør jeg?"
+    },
+    "title": "Ofte stilte spørsmål"
   },
   "windowsSetup": {
     "step4": "Velg i Soundux",
     "step1": "Opptaksenheter",
     "finished": "Fullført",
     "continue": "Fortsett",
-    "title": "Windows-oppsett"
+    "title": "Windows-oppsett",
+    "playbackThroughThisDevice": "Avspilling gjennom enheten",
+    "step3": "Forbedre kvaliteten",
+    "listenToThisDevice": "Lytt til denne enheten",
+    "step2": "Skru på mikrofon",
+    "openRecordingDevices": "Åpne innstillingene for opptaksenheter",
+    "optional": "Valgfritt"
   },
   "download": {
     "olderVersions": "Eldre",
@@ -68,13 +83,23 @@
       "aurPage": "Besøk AUR-siden",
       "archLinux": "Installer Soundux med din AUR-hjelper",
       "snap": "For alle distribusjoner med Snap-støtte",
-      "flatpak": "For alle distribusjoner med Flatpak-støtte"
+      "flatpak": "For alle distribusjoner med Flatpak-støtte",
+      "mpr": {
+        "dependencies": "Du må installere {makedeb} og {tap} først. Sjekk {documentation}",
+        "documentation": "dokumentasjonen"
+      }
     },
     "windows": {
-      "important": "Viktig!"
+      "important": "Viktig!",
+      "additionalSteps": "Ytterligere oppsettssteg",
+      "downloadPortable": "Last ned portabel",
+      "downloadSetup": "Last ned oppsett"
     },
     "latestVersion": "Siste versjon",
-    "visitOurGitHub": "Besøk GitHub-siden vår"
+    "visitOurGitHub": "Besøk GitHub-siden vår",
+    "released": "Utgitt",
+    "failedToFetch": "Kunne ikke hente info fra GitHub",
+    "downloadNow": "Last ned Soundux nå"
   },
   "input": {
     "ctrl": "CTRL"
