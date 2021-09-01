@@ -94,7 +94,12 @@
       "ubuntu": "Installer Soundux sur Ubuntu",
       "downloadDeb": "Télécharger le paquet DEB",
       "copr": "via {copr}",
-      "noAutomaticUpdates": "pas de mises à jour automatiques"
+      "noAutomaticUpdates": "pas de mises à jour automatiques",
+      "mpr": {
+        "documentation": "documentation à ce sujet",
+        "dependencies": "Vous devez d'abord installer {makedeb} et {tap}. Consultez la {documentation}",
+        "title": "via {mpr}"
+      }
     },
     "windows": {
       "recommendSetup": "Nous vous recommandons vivement de télécharger la Configuration car il télécharge et installe automatiquement les dépendances requises (WebView2 Runtime et VB-Cable).",
