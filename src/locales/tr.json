@@ -27,7 +27,12 @@
       "archLinux": "Soundux'u favori AUR yardımcınızla kurun",
       "snap": "Snap destekli tüm dağıtımlar için",
       "flatpak": "Flatpak destekli tüm dağıtımlar için",
-      "noAutomaticUpdates": "otomatik güncelleme yok"
+      "noAutomaticUpdates": "otomatik güncelleme yok",
+      "mpr": {
+        "documentation": "belgelendirme",
+        "dependencies": "Önce {makedeb} ve {tap} kurmanız gerekiyor. Bkz: {documentation}",
+        "title": "{mpr} aracılığıyla"
+      }
     },
     "wrongOS": "Yanlış işletim sistemi algılanırsa, lütfen sağ üst köşeden değiştirin.",
     "differentFlavors": "Soundux, işletim sisteminiz için farklı tatlar olarak sunulmaktadır.",
