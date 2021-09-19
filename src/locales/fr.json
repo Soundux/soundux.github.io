@@ -1,8 +1,8 @@
 {
   "features": {
     "passThrough": {
-      "description": "La transmission d'application vous permet de rediriger le son d'une application vers une autre. Vous pouvez l'utiliser comme solution de contournement pour la fonction de partage audio de Discord",
-      "title": "Transmission d'application",
+      "description": "Le App pass-through vous permet de rediriger le son d'une application vers une autre. Vous pouvez l'utiliser comme solution de contournement pour la fonction de partage audio de Discord",
+      "title": "Passthrough d'application",
       "description2": "Peut aussi être ouvert avec {ctrl} + {g}"
     },
     "globalHotkeys": {
@@ -10,10 +10,10 @@
       "title": "Raccourcis clavier globaux"
     },
     "emulatedLaunchpad": {
-      "description3": "Naviguez dans les pages avec vos touches fléchées",
+      "description3": "Naviguez dans les pages avec vos flèches du clavier",
       "description2": "Appuyez sur la touche correspondante, visible en haut à droite, pour jouer un son",
-      "title": "Mode pavé de lancement émulé",
-      "description": "Un pavé de lancement émulé sur votre clavier"
+      "title": "Mode launchpad émulé",
+      "description": "Un launchpad émulé sur votre clavier"
     },
     "soundSearch": {
       "description2": "Peut aussi être ouvert avec {ctrl} + {f}",
@@ -21,11 +21,11 @@
       "title": "Recherche de son"
     },
     "audioFormats": {
-      "description": "Comme nous utilisons {miniaudio}, nous prenons en charge les formats audio courants tels que mp3, wav, flac",
+      "description": "Comme nous utilisons {miniaudio}, nous prenons en charge les formats audio communs tels que mp3, wav, flac",
       "title": "Prise en charge d’un grand nombre de formats audio"
     },
     "mediaControls": {
-      "description": "Nous avons des contrôles multimédias individuels pour chaque son en cours de lecture. Vous pouvez les lire/mettr en pause ⏯, les rechercher 🔼, les répéter 🔂 ou les arrêter ⏹.",
+      "description": "Nous avons des contrôles multimédias individuels pour chaque son en cours de lecture. Vous pouvez les lire/mettre en pause ⏯, les rechercher 🔼, les répéter 🔂 ou les arrêter ⏹.",
       "title": "Contrôles multimédias"
     },
     "folderTabs": {
@@ -41,8 +41,8 @@
   },
   "faq": {
     "passThroughFails": {
-      "answer": "Certaines applications utilisent OpenAL pour l'audio, ce qui peut empêcher ceci. Pour résoudre ce problème, créez un fichier nommé {nomdufichier} dans votre dossier personnel avec le contenu suivant :",
-      "question": "Lorsque j'essaye de transmettre une application, ceci échoue"
+      "answer": "Certaines applications utilisent OpenAL pour l'audio, ce qui peut empêcher ceci. Pour résoudre ce problème, créez un fichier nommé {nomdufichier} dans votre dossier home avec le contenu suivant :",
+      "question": "Lorsque j'essaye de passthrough une application, ceci échoue"
     },
     "discordAudioQuality": {
       "answer": "Essayez de désactiver {echoCancellation} et {noiseReduction} dans les paramètres de Discord sous {voiceAndVideo}.",
@@ -82,16 +82,16 @@
   "download": {
     "linux": {
       "debPackage": "via le paquet DEB",
-      "debian": "Installer Soundux sur Debian",
+      "debian": "Installer Soundux pour Debian",
       "aurPage": "Visitez la page AUR",
-      "archLinux": "Installer Soundux avec votre aide AUR préférée",
+      "archLinux": "Installer Soundux avec votre guide AUR préférée",
       "snap": "Pour toutes les distributions avec la prise en charge Snap",
       "flatpak": "Pour toutes les distributions avec la prise en charge Flatpak",
       "downloadRpm": "Télécharger le paquet RPM",
       "rpmPackage": "via le paquet RPM",
-      "fedora": "Installer Soundux sur Fedora",
+      "fedora": "Installer Soundux pour Fedora",
       "pacstall": "via {pacstall}",
-      "ubuntu": "Installer Soundux sur Ubuntu",
+      "ubuntu": "Installer Soundux pour Ubuntu",
       "downloadDeb": "Télécharger le paquet DEB",
       "copr": "via {copr}",
       "noAutomaticUpdates": "pas de mises à jour automatiques",
@@ -133,9 +133,9 @@
     "nativeSupportFor": "Prise en charge native de",
     "screenshots": "Captures d’écran",
     "seeAllFeatures": "Voir toutes les fonctionnalités",
-    "andManyMore": "Et bien plus",
-    "universalArchitecture": "Elle possède une architecture universelle et fonctionne donc avec diverses applications",
+    "andManyMore": "Et bien plus encore",
+    "universalArchitecture": "Soundux possède une architecture universelle et fonctionne donc avec diverses applications",
     "download": "Télécharger",
-    "tagline": "Une table d’harmonie multiplateforme"
+    "tagline": "Un soundboard multi-plateformes"
   }
 }
