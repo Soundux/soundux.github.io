@@ -1,1 +1,17 @@
-{}
+{
+  "features": {
+    "passThrough": {
+      "description2": "Ankaŭ malfermebla per {ctrl} + {g}"
+    },
+    "soundSearch": {
+      "description2": "Ankaŭ malfermebla per {ctrl} + {f}"
+    },
+    "darkAndLightTheme": {
+      "title": "Malhela kaj hela etosoj"
+    }
+  },
+  "index": {
+    "download": "Elŝuti",
+    "screenshots": "Ekrankopioj"
+  }
+}
