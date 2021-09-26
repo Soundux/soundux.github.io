@@ -13,5 +13,33 @@
   "index": {
     "download": "Elŝuti",
     "screenshots": "Ekrankopioj"
+  },
+  "input": {
+    "ctrl": "Stir"
+  },
+  "download": {
+    "windows": {
+      "downloadPortable": "Elŝuti porteblaĵon",
+      "downloadSetup": "Elŝuti instalilon"
+    },
+    "linux": {
+      "archLinux": "Instali Soundux per via AUR-helpilo",
+      "downloadRpm": "Elŝuti .rpm-pakon",
+      "rpmPackage": "per .rpm-pako",
+      "copr": "per {copr}",
+      "debian": "Instali Soundux sur Debian",
+      "mpr": {
+        "title": "per {mpr}"
+      },
+      "pacstall": "per {pacstall}",
+      "ubuntu": "Instali Soundux sur Ubuntu",
+      "downloadDeb": "Elŝuti .deb-pakon",
+      "debPackage": "per .deb-pako",
+      "aurPage": "Viziti nian paĝon ĉe AUR"
+    },
+    "changelog": "Registro de ŝanĝoj",
+    "olderVersions": "Malnovaj versioj",
+    "latestVersion": "Plej nova versio",
+    "visitOurGitHub": "Viziti nian paĝon ĉe GitHub"
   }
 }
