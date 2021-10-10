@@ -255,7 +255,7 @@
                                 Pacstall
                               </a>
                             </i18n>
-                            <code>sudo pacstall -I soundux</code>
+                            <code>pacstall -I soundux</code>
                             <DownloadMPR></DownloadMPR>
                             <div class="subtitle-1">
                               {{ $t('download.linux.debPackage') }}
