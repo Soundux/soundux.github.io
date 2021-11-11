@@ -1,1 +1,79 @@
-{}
+{
+  "index": {
+    "tagline": "Wieloplatformowy soundboard",
+    "andManyMore": "I wiele więcej",
+    "seeAllFeatures": "Zobacz wszystkie funkcje",
+    "download": "Pobierz",
+    "screenshots": "Zrzuty ekranu",
+    "nativeSupportFor": "Natywne wsparcie dla"
+  },
+  "features": {
+    "title": "Cechy",
+    "globalHotkeys": {
+      "title": "Globalne skróty klawiszowe",
+      "description": "Możesz ustawić skróty klawiszowe dla każdego dźwięku oraz do zatrzymania odtwarzania ich wszystkich. Masz również możliwość używania tylko skrótów klawiszowych dla wybranej zakładki"
+    },
+    "passThrough": {
+      "title": "Przekaz do aplikacji",
+      "description2": "Może być również otwarta za pomocą {ctrl} + {g}",
+      "description": "Funkcja Przekazu Aplikacji pozwala na przekierowanie dźwięku z dowolnego programu do następnego. Może służyć jako zastępstwo dla Discordowej funkcji udostępniania dźwięku"
+    },
+    "audioFormats": {
+      "title": "Wspiera szeroki zakres formatów audio",
+      "description": "Wykorzystując {miniaudio}, Soundux wspiera popularne formaty plików audio, takie jak mp3, wav, czy flac"
+    },
+    "clickToShowAdditionalInformation": "Klikaj w poszczególne cechy, aby wyświetlić dodatkowe informacje na ich temat",
+    "darkAndLightTheme": {
+      "title": "Ciemny i jasny motyw",
+      "description": "Wybierz swoją truciznę"
+    },
+    "folderTabs": {
+      "title": "Zakładki folderów",
+      "description": "Nie musisz dodawać pojedyńczych dźwięków. Po prostu wrzuć je do folderu 📂i dodaj go jako zakładkę. Automatycznie zapełni się ona plikami audio ze wspieranymi formatami 🎧"
+    },
+    "mediaControls": {
+      "title": "Sterowanie odtwarzaniem",
+      "description": "Każdy odtwarzany dźwięk możesz kontrolować z osobna. Możesz wznawiać/pauzować odtwarzanie ⏯, przewijać je 🔼, zapętlać je 🔂 lub zatrzymać ich odtwarzanie ⏹."
+    },
+    "soundSearch": {
+      "title": "Wyszukiwanie dźwięku",
+      "description": "Globalne wyszukiwanie ze wszystkich zakładek",
+      "description2": "Może być również otwarte skrótem klawiszowym {ctrl} + {f}"
+    },
+    "emulatedLaunchpad": {
+      "title": "Tryb emulacji Launchpada",
+      "description": "Emulowany launchpad z wykorzystaniem twojej klawiatury",
+      "description2": "Wciśnij przycisk odpowiadający widzianemu w prawym górym rogu aby odtworzyć dźwięk",
+      "description3": "Nawiguj po stronach przy użyciu strzałek na klawiaturze"
+    }
+  },
+  "screenshots": {
+    "hint": "Tutaj możesz zobaczyć zrzuty ekranu aktualnej wersji"
+  },
+  "faq": {
+    "discordInputDevice": {
+      "question": "Discord sugeruje mi zmianę urządzenia wejścia, co robić?",
+      "answer": "Kliknij przycisk {neverAskAgain}",
+      "neverAskAgain": "Nie pytaj więcej"
+    },
+    "discordAudioQuality": {
+      "answer": "Spróbuj wyłączyć {echoCancellation} i {noiseReduction} w ustawieniach Discorda w zakładce {voiceAndVideo}.",
+      "echoCancellation": "Redukcję pogłosu",
+      "noiseReduction": "Tłumienie zakłóceń",
+      "voiceAndVideo": "Głos & Wideo",
+      "question": "Dlaczego jakość audio na Discordzie jest taka zła?"
+    },
+    "cantHearSounds": {
+      "question": "Nie słyszę dźwięków",
+      "answer": "Sprawdź, czy twoje domyślne urządzenie wyjścia jest skonfigurowane poprawnie"
+    },
+    "passThroughFails": {
+      "question": "Gdy próbuję przekazać dźwięk z aplikacji , nie udaje się to",
+      "answer": "Niektóre aplikacje używają OpenAL do odtwarzania dźwięku, co ma szansę uniemożliwić zrobienie tego. Aby to rozwiązać, utwórz plik nazwany {fileName} w twoim folderze domowym, który będzie miał następującą zawartość:"
+    },
+    "title": "Często zadawane pytania"
+  },
+  "input": {
+    "ctrl": "CTRL"
+  }
+}
