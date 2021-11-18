@@ -8,7 +8,7 @@
       <div class="text-center mb-3 grey--text text--lighten-1">{{ $t('index.tagline') }} 🔊</div>
       <v-row justify="center" dense>
         <v-col cols="auto">
-          <v-btn color="blue" href="https://discord.gg/4HwSGN4Ec2" target="_blank" x-large>
+          <v-btn color="blue" href="https://discord.gg/4HwSGN4Ec2" target="_blank" x-large dark>
             <v-icon left>mdi-discord</v-icon>
             Discord
           </v-btn>
