@@ -41,7 +41,7 @@
   },
   "faq": {
     "passThroughFails": {
-      "answer": "Certaines applications utilisent OpenAL pour l'audio, ce qui peut empêcher ceci. Pour résoudre ce problème, créez un fichier nommé {nomdufichier} dans votre dossier home avec le contenu suivant :",
+      "answer": "Certaines applications utilisent OpenAL pour l'audio, ce qui peut empêcher ceci. Pour résoudre ce problème, créez un fichier nommé {fileName} dans votre dossier home avec le contenu suivant :",
       "question": "Lorsque j'essaye de passthrough une application, ceci échoue"
     },
     "discordAudioQuality": {
