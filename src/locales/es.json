@@ -1,5 +1,20 @@
 {
   "input": {
     "ctrl": "ctrl"
+  },
+  "features": {
+    "title": "Características"
+  },
+  "screenshots": {
+    "hint": "Aquí puedes ver capturas de pantalla de la versión actual"
+  },
+  "index": {
+    "tagline": "Un panel de sonido multi-plataforma",
+    "download": "Descargar",
+    "universalArchitecture": "Tiene una arquitectura universal y por lo tanto funciona con una variedad de aplicaciones",
+    "andManyMore": "Y muchos más",
+    "seeAllFeatures": "Mira todas las funciones",
+    "screenshots": "Capturas de pantalla",
+    "nativeSupportFor": "Soporte nativo para"
   }
 }
