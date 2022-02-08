@@ -3,7 +3,42 @@
     "ctrl": "ctrl"
   },
   "features": {
-    "title": "Características"
+    "title": "Características",
+    "folderTabs": {
+      "description": "No tienes que añadir sonidos uno a uno. Solo ponlos en una carpeta 📂 y agrégala como una pestaña. Automáticamente va a estar disponible en todos los formatos de audio soportados."
+    },
+    "mediaControls": {
+      "title": "Control multimedia",
+      "description": "Tenemos controles para cada sonido que se esté reproduciendo. Puedes reproducir/pausar ⏯, adelantar 🔼, repetir 🔂 o detenerlos ⏹."
+    },
+    "globalHotkeys": {
+      "description": "Puedes establecer teclas de acceso rápido para cada sonido y para detener todos los sonidos. También hay una opción para solamente hacer funcionar las teclas de acceso rápido de la pestaña que está actualmente seleccionada",
+      "title": "Teclas de acceso rápido globales"
+    },
+    "passThrough": {
+      "description": "Pasar a traves de la aplicación te permite redireccionar el sonido de cualquier aplicacion a otra. Puedes usarlo como una solución alterna a la función de compartir audio de Discord",
+      "description2": "También puede ser abierto con {ctrl} + {g}"
+    },
+    "clickToShowAdditionalInformation": "Haz clic en las diferentes funciones para revelar información adicional sobre ellas",
+    "darkAndLightTheme": {
+      "title": "Tema claro y oscuro",
+      "description": "Elige tu veneno"
+    },
+    "audioFormats": {
+      "title": "Soporta una variedad de formatos de audio",
+      "description": "Como hacemos uso de {miniaudio}, soportamos formatos de audio comunes como mp3, wav y flac"
+    },
+    "soundSearch": {
+      "title": "Búsqueda de sonido",
+      "description": "Una búsqueda global para todas las pestañas",
+      "description2": "También puede ser abierto con {ctrl} + {f}"
+    },
+    "emulatedLaunchpad": {
+      "title": "Modo Launchpad emulado",
+      "description": "Un Launchpad emulado en tu teclado",
+      "description2": "Presiona la tecla correspondiente que sale arriba a la derecha para reproducir un sonido",
+      "description3": "Navega páginas con tus flechitas"
+    }
   },
   "screenshots": {
     "hint": "Aquí puedes ver capturas de pantalla de la versión actual"
@@ -16,5 +51,45 @@
     "seeAllFeatures": "Mira todas las funciones",
     "screenshots": "Capturas de pantalla",
     "nativeSupportFor": "Soporte nativo para"
+  },
+  "download": {
+    "windows": {
+      "recommendSetup": "Recomendamos áltamente que descargues el Instalador debido a que automáticamente descarga e instala las dependencias requeridas (WebView2 Runtime y VB-Cable).",
+      "downloadSetup": "Descargar Instalador",
+      "downloadPortable": "Descargar Portable",
+      "important": "¡Importante!",
+      "importantInformation": "Por favor haz clic en el botón de abajo o mira el vídeo para obtener información importante sobre el soporte en Windows",
+      "additionalSteps": "Pasos adicionales de la instalación"
+    },
+    "linux": {
+      "mpr": {
+        "dependencies": "Necesitas instalar {makedeb} y {tap} primero. Mira la {documentación}",
+        "title": "a través de {mpr}",
+        "documentation": "documentación de mpr"
+      },
+      "noAutomaticUpdates": "sin actualizaciones automáticas",
+      "flatpak": "Para todas las distribuciones que soporten Flatpak",
+      "snap": "Para todas las distribuciones que soporten Snap",
+      "archLinux": "Instala Soundux con tu ayudante AUR favorito",
+      "debian": "Instala Soundux en Debian",
+      "debPackage": "a través del paquete DEB",
+      "downloadDeb": "Descargar paquete DEB",
+      "ubuntu": "Instala Soundux en Ubuntu",
+      "pacstall": "a través de {pacstall}",
+      "fedora": "Instalar Soundux en Fedora",
+      "copr": "a través de {copr}",
+      "rpmPackage": "a través del paquete RPM",
+      "downloadRpm": "Descargar paquete RPM"
+    },
+    "downloadNow": "Descarga Soundux ahora",
+    "failedToFetch": "Hubo un error al obtener la información de GitHub",
+    "visitOurGitHub": "Visita nuestra página de GitHub",
+    "latestVersion": "Última versión",
+    "released": "Lanzado",
+    "notSupported": "Soundux no está soportado actualmente en tu sistema operativo",
+    "differentFlavors": "Soundux está ofrecido en diferentes versiones para tu sistema operativo.",
+    "wrongOS": "Si se ha detectado el sistema operativo incorrecto, por favor cámbialo en la esquina superior derecha.",
+    "changelog": "Registro de cambios",
+    "downloadsPerVersion": "Descargas por versión"
   }
 }
