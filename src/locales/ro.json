@@ -1,5 +1,36 @@
 {
   "input": {
     "ctrl": "CTRL"
+  },
+  "index": {
+    "download": "Descarca",
+    "andManyMore": "Si mai multe",
+    "seeAllFeatures": "Vezi toate calitatile",
+    "screenshots": "Captura de ecran",
+    "tagline": "Un soundboard multi-platforma",
+    "universalArchitecture": "Are o arhitectura universala deci merge cu o varietate de aplicatii",
+    "nativeSupportFor": "Suport nativ pentru"
+  },
+  "features": {
+    "title": "Calitati",
+    "darkAndLightTheme": {
+      "title": "Tema intunecata si luminoasa",
+      "description": "Alege-ti otrava"
+    },
+    "folderTabs": {
+      "title": "Foldere",
+      "description": "Nu trebuie sa adaugi doar sunete singure. Pune-le intr-un folder 📂 si adauga-le ca o categorie. O sa apara toate cele care au format audio suportat 🎧"
+    },
+    "mediaControls": {
+      "title": "Controale media",
+      "description": "Avem controale media individuale pentru orice sunet. Poti sa redai/pauzezi⏯, inainta🔼, repeti 🔂 sau sa opresti ⏹."
+    },
+    "audioFormats": {
+      "title": "Suporta o varietate de formate audio"
+    },
+    "clickToShowAdditionalInformation": "Apasa pe calitatile diferite ca sa descoperi informatii aditionale despre ele"
+  },
+  "screenshots": {
+    "hint": "Aici poti vedea poze cu ultima versiune"
   }
 }
