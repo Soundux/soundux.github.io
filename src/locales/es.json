@@ -5,7 +5,8 @@
   "features": {
     "title": "Características",
     "folderTabs": {
-      "description": "No tienes que añadir sonidos uno a uno. Solo ponlos en una carpeta 📂 y agrégala como una pestaña. Automáticamente va a estar disponible en todos los formatos de audio soportados."
+      "description": "No tienes que añadir sonidos uno a uno. Solo ponlos en una carpeta 📂 y agrégala como una pestaña. Automáticamente va a estar disponible en todos los formatos de audio soportados.",
+      "title": "Pestañas"
     },
     "mediaControls": {
       "title": "Control multimedia",
@@ -17,7 +18,8 @@
     },
     "passThrough": {
       "description": "Pasar a traves de la aplicación te permite redireccionar el sonido de cualquier aplicacion a otra. Puedes usarlo como una solución alterna a la función de compartir audio de Discord",
-      "description2": "También puede ser abierto con {ctrl} + {g}"
+      "description2": "También puede ser abierto con {ctrl} + {g}",
+      "title": "Transferencia de aplicaciones"
     },
     "clickToShowAdditionalInformation": "Haz clic en las diferentes funciones para revelar información adicional sobre ellas",
     "darkAndLightTheme": {
@@ -79,7 +81,8 @@
       "fedora": "Instalar Soundux en Fedora",
       "copr": "a través de {copr}",
       "rpmPackage": "a través del paquete RPM",
-      "downloadRpm": "Descargar paquete RPM"
+      "downloadRpm": "Descargar paquete RPM",
+      "aurPage": "Visitar nuestra página"
     },
     "downloadNow": "Descarga Soundux ahora",
     "failedToFetch": "Hubo un error al obtener la información de GitHub",
