@@ -84,6 +84,9 @@ const config: NuxtConfig = {
       { code: 'nb', iso: 'nb-NO', file: 'nb_NO.json' },
       { code: 'pt', iso: 'pt-BR', file: 'pt_BR.json' },
     ],
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
     lazy: true,
     langDir: 'locales/',
     defaultLocale: 'en',
