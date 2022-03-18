@@ -68,7 +68,11 @@
       "archLinux": "Instalar Soundux com seu ajudante de AUR favorito",
       "snap": "Para todas as distros com suporte a Snap",
       "flatpak": "Para todas as distros com suporte a Flatpak",
-      "noAutomaticUpdates": "nenhuma atualização automática"
+      "noAutomaticUpdates": "nenhuma atualização automática",
+      "mpr": {
+        "documentation": "documentação para isso",
+        "dependencies": "Você precisa instalar {makedeb} e {tap} primeiro. Veja a {documentation}"
+      }
     },
     "windows": {
       "additionalSteps": "Etapas de instalação adicionais",
