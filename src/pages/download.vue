@@ -125,7 +125,7 @@
                     </v-row>
                     <v-row justify="center" dense>{{ $t('download.linux.flatpak') }}</v-row>
                   </v-col>
-                  <v-col cols="auto">
+                  <!-- <v-col cols="auto">
                     <v-row justify="center" align-content="center" align="center" no-gutters dense>
                       <a href="https://snapcraft.io/soundux" target="_blank">
                         <img
@@ -138,7 +138,7 @@
                       </a>
                     </v-row>
                     <v-row justify="center" dense>{{ $t('download.linux.snap') }}</v-row>
-                  </v-col>
+                  </v-col>-->
                 </v-row>
                 <v-row justify="center">
                   <v-col cols="auto">
