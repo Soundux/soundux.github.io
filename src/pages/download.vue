@@ -434,7 +434,7 @@ export default Vue.extend({
           return asset.browser_download_url;
         }
       }
-      return 'https://github.com/Soundux/Soundux/releases/latest';
+      return 'https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7-windows-setup.exe';
     },
     windowsPortable(): string {
       if (this.latestRelease) {
@@ -443,7 +443,7 @@ export default Vue.extend({
           return asset.browser_download_url;
         }
       }
-      return 'https://github.com/Soundux/Soundux/releases/latest';
+      return 'https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7-windows-portable.exe';
     },
     debPackage(): [string, string] {
       if (this.latestRelease) {
