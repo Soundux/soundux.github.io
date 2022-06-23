@@ -16,7 +16,19 @@
       "title": "Mörkt och ljust tema"
     },
     "clickToShowAdditionalInformation": "Klicka på de olika funktionerna för att få mer information om dem",
-    "title": "Funktioner"
+    "title": "Funktioner",
+    "mediaControls": {
+      "description": "Vi har individuella mediakontroller för att spela ljud. Du kan spela/pausa ⏯, söka 🔼, repetera 🔂 eller stoppa ⏹ dom.",
+      "title": "Mediakontroller"
+    },
+    "folderTabs": {
+      "title": "Mappflikar",
+      "description": "Du behöver inte lägga till enstaka ljud. Sätt dom bara i en mapp 📂 och lägg till den som en flik. Den kommer automatiskt att fyllas med alla filer av rätt ljud format 🎧"
+    },
+    "audioFormats": {
+      "title": "Stödjer ett flertal ljudformat",
+      "description": "Då vi använder oss av {miniaudio} så stödjer vi vanliga ljudformat såsom mp3, wav, flac"
+    }
   },
   "screenshots": {
     "hint": "Här kan du se skärmdumpar av den senaste versionen"
