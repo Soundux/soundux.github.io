@@ -93,6 +93,13 @@
     "differentFlavors": "Soundux está ofrecido en diferentes versiones para tu sistema operativo.",
     "wrongOS": "Si se ha detectado el sistema operativo incorrecto, por favor cámbialo en la esquina superior derecha.",
     "changelog": "Registro de cambios",
-    "downloadsPerVersion": "Descargas por versión"
+    "downloadsPerVersion": "Descargas por versión",
+    "olderVersions": "versiones antiguas",
+    "latestVersions": "{num} versiones más recentes",
+    "tryOlderVersions": "Si ocurren problemas con la versión más recente, es posible que no se ocurran en una version más antigua. Puedes probar esas versiones por aqui:"
+  },
+  "windowsSetup": {
+    "title": "Configuración de Windows",
+    "optional": "Opcional"
   }
 }
