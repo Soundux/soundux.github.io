@@ -82,7 +82,7 @@
       "copr": "a través de {copr}",
       "rpmPackage": "a través del paquete RPM",
       "downloadRpm": "Descargar paquete RPM",
-      "aurPage": "Visitar nuestra página"
+      "aurPage": "Ir a página AUR"
     },
     "downloadNow": "Descarga Soundux ahora",
     "failedToFetch": "Hubo un error al obtener la información de GitHub",
@@ -100,6 +100,13 @@
   },
   "windowsSetup": {
     "title": "Configuración de Windows",
-    "optional": "Opcional"
+    "optional": "Opcional",
+    "additionalSteps": "Se requieren pasos adicionales para que funcione correctamente en Windows:",
+    "continue": "Siguiente",
+    "finished": "Finalizar",
+    "step1": "Dispositivos de grabación",
+    "openRecordingDevices": "Abrir la configuración de dispositivos de grabación",
+    "step2": "Habilitar micrófono",
+    "step3": "Mejorar calidad"
   }
 }
