@@ -1,6 +1,26 @@
 {
   "index": {
     "download": "下載",
-    "screenshots": "截圖"
+    "screenshots": "截圖",
+    "seeAllFeatures": "查看所有功能",
+    "andManyMore": "更多"
+  },
+  "screenshots": {
+    "hint": "這裡可以看到現在的版本"
+  },
+  "features": {
+    "clickToShowAdditionalInformation": "點擊不同的功能以顯示其他信息",
+    "darkAndLightTheme": {
+      "title": "深色或淺色主題"
+    },
+    "audioFormats": {
+      "title": "支援多種音樂格式"
+    },
+    "mediaControls": {
+      "description": "您可以播放/暫停⏯, seek 🔼, 重複 🔂 或停止 ⏹ them。"
+    }
+  },
+  "input": {
+    "ctrl": "CTRL"
   }
 }
