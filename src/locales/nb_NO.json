@@ -14,7 +14,8 @@
       "description": "Du må ikke velge enkeltlyder. Bare legg dem i en mappe 📂 og legg det til som en fane. Dette vil automatisk fylle den med alle de støttede lydformatene 🎧"
     },
     "darkAndLightTheme": {
-      "title": "Mørk og lys drakt"
+      "title": "Mørk og lys drakt",
+      "description": "Velg ditt baneskår"
     },
     "passThrough": {
       "description2": "Kan også åpnes med {ctrl} + {g}",
