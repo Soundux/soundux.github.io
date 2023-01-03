@@ -5,7 +5,7 @@
   "features": {
     "title": "Características",
     "folderTabs": {
-      "description": "No tienes que añadir sonidos uno a uno. Solo ponlos en una carpeta 📂 y agrégala como una pestaña. Automáticamente va a estar disponible en todos los formatos de audio soportados.",
+      "description": "No es necesario agregar sonidos individuales. Simplemente colóquelos en una carpeta 📂 y agréguelos como una pestaña. Se llena automáticamente con todos los formatos de audio compatibles 🎧",
       "title": "Pestañas"
     },
     "mediaControls": {
@@ -107,6 +107,35 @@
     "step1": "Dispositivos de grabación",
     "openRecordingDevices": "Abrir la configuración de dispositivos de grabación",
     "step2": "Habilitar micrófono",
-    "step3": "Mejorar calidad"
+    "step3": "Mejorar calidad",
+    "listenToThisDevice": "Escucha este dispositivo",
+    "playbackThroughThisDevice": "Reproducción a través de este dispositivo",
+    "step4": "Seleccionar en Soundux",
+    "selectCableInput": "En Soundux, seleccione {cableInput} en la selección superior derecha",
+    "changeProperties": "Abra las propiedades de su micrófono, habilite {listenToThisDevice} y seleccione {cableInput} en {playbackThisDevice}.",
+    "betterAudioQuality": "Para una mejor calidad de audio, abra las propiedades de {cableOutput} y establezca la frecuencia de muestreo en la misma que su micrófono."
+  },
+  "faq": {
+    "discordAudioQuality": {
+      "answer": "Intente deshabilitar {echoCancellation} y {noiseReduction} en la configuración de Discord en {voiceAndVideo}.",
+      "echoCancellation": "Cancelación del eco",
+      "noiseReduction": "Reducción de ruido",
+      "voiceAndVideo": "Voz y vídeo",
+      "question": "¿Por qué la calidad del audio en Discord es tan mala?"
+    },
+    "cantHearSounds": {
+      "question": "No puedo escuchar los sonidos",
+      "answer": "Compruebe si su dispositivo de salida predeterminado está configurado correctamente"
+    },
+    "passThroughFails": {
+      "question": "Cuando intento pasar una aplicación falla",
+      "answer": "Algunas aplicaciones usan OpenAL para el audio, lo que puede evitarlo. Para resolver esto, cree un archivo llamado {fileName} en su carpeta de inicio con los siguientes contenidos:"
+    },
+    "title": "Preguntas frecuentes",
+    "discordInputDevice": {
+      "question": "Discord me pregunta si quiero cambiar mi dispositivo de entrada, ¿qué hacer?",
+      "answer": "Haga clic en {neverAskAgain}",
+      "neverAskAgain": "No me pregunte de nuevo"
+    }
   }
 }
