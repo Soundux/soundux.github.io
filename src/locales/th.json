@@ -1,1 +1,13 @@
-{}
+{
+  "index": {
+    "download": "ดาวน์โหลด",
+    "andManyMore": "และอื่น ๆ อีกมากมาย",
+    "screenshots": "ภาพหน้าจอ"
+  },
+  "input": {
+    "ctrl": "CTRL"
+  },
+  "screenshots": {
+    "hint": "นี้คือภาพหน้าจอของเวอร์ชันปัจจุบัน"
+  }
+}
