@@ -1,5 +1,141 @@
 {
   "input": {
     "ctrl": "CTRL"
+  },
+  "index": {
+    "tagline": "Uma soundboard multi-plataforma",
+    "download": "Descarregar",
+    "universalArchitecture": "Ela possui uma arquitetura universal e funciona numa variedade de aplicações",
+    "andManyMore": "E muito mais",
+    "seeAllFeatures": "Veja todas as funções",
+    "screenshots": "Capturas de ecrã",
+    "nativeSupportFor": "Suporte nativo para"
+  },
+  "screenshots": {
+    "hint": "Aqui consegue ver capturas de ecrã da versão atual"
+  },
+  "features": {
+    "clickToShowAdditionalInformation": "Clique nas diferentes funções para mostrar informações adicionais sobre elas",
+    "darkAndLightTheme": {
+      "title": "Tema escuro e claro",
+      "description": "A escolha é a sua"
+    },
+    "folderTabs": {
+      "title": "Abas de pastas",
+      "description": "Não precisa adicionar cada som de uma vez. Só ponha eles numa pasta 📂 e adicione-os numa guia. Ela vai ser preenchida automaticamente com sons com formato suportados 🎧"
+    },
+    "title": "Funções",
+    "mediaControls": {
+      "title": "Controles de mídia",
+      "description": "Temos controles de mídia individuais para cada som, Pode tocar/pausar ⏯, procurar 🔼, repetir 🔂 ou parar ⏹ eles."
+    },
+    "audioFormats": {
+      "title": "Suporta uma variedade de formatos de áudio",
+      "description": "Como usamos {miniaudio}, suportamos formatos de áudio comuns como mp3, wav e flac"
+    },
+    "soundSearch": {
+      "title": "Pesquisa de som",
+      "description": "Uma pesquisa global para todas as abas",
+      "description2": "Também pode ser aberto com {ctrl} + {f}"
+    },
+    "emulatedLaunchpad": {
+      "title": "Modo Launchpad emulado",
+      "description": "Uma plataforma de lançamento para o seu teclado",
+      "description2": "Pressione a tecla correspondente na canto para tocar um som",
+      "description3": "Navegue páginas com as setas do teclado"
+    },
+    "globalHotkeys": {
+      "title": "Atalhos globais",
+      "description": "Consegue definir atalhos para cada som e para parar todos os sons. Também existe uma opção para apenas ativar atalhos na guia atual"
+    },
+    "passThrough": {
+      "title": "Pass-through de aplicação",
+      "description": "Pass-through de aplicação permite que redirecione o som de qualquer aplicação para outro. Pode utilizar como uma alternativa à função de compartilhar áudio do Discord",
+      "description2": "Também pode ser aberto com {ctrl} + {g}"
+    }
+  },
+  "download": {
+    "downloadNow": "Descarregar o Soundux agora",
+    "windows": {
+      "downloadSetup": "Descarregar o instalador",
+      "downloadPortable": "Descarregar o programa portável",
+      "recommendSetup": "Recomendamos que descarregue o instalador, porque ele descarrega automaticamente e instala todas as dependências requeridas (WebView2 Runtime e VB-Cable).",
+      "important": "Importante!",
+      "importantInformation": "Por favor, clique no botão abaixo ou assista o vídeo sobre informações importantes sobre o suporte de Windows",
+      "additionalSteps": "Etapas de instalação adicionais"
+    },
+    "linux": {
+      "mpr": {
+        "dependencies": "Precisa instalar {makedeb} e {tap} primeiro. Veja a {documentation}",
+        "documentation": "documentação para isso",
+        "title": "via {mpr}"
+      },
+      "noAutomaticUpdates": "nenhuma atualização automática",
+      "flatpak": "Para todas as distros com suporte a Flatpak",
+      "snap": "Para todas as distros com suporte a Snap",
+      "archLinux": "Instalar Soundux com o seu ajudante de AUR favorito",
+      "aurPage": "Visitar página do AUR",
+      "debian": "Instalar Soundux no Debian",
+      "debPackage": "via um pacote DEB",
+      "downloadDeb": "Baixar pacote DEB",
+      "ubuntu": "Instalar Soundux no Ubuntu",
+      "pacstall": "via {pacstall}",
+      "fedora": "Instalar Soundux no Fedora",
+      "copr": "via {copr}",
+      "rpmPackage": "via pacote RPM",
+      "downloadRpm": "Baixar pacote RPM"
+    },
+    "failedToFetch": "Não foi possível obter informações do GitHub",
+    "visitOurGitHub": "Visitar nossa página do GitHub",
+    "latestVersion": "Versão mais recente",
+    "released": "Publicada",
+    "notSupported": "Soundux atualmente não é suportado no seu sistema operativo",
+    "differentFlavors": "Soundux é disponível em diferentes versões no seu sistema operativo.",
+    "wrongOS": "Se o sistema operativo errado foi detectado, por favor mude-o no canto superior direito.",
+    "changelog": "histórico de mudanças",
+    "downloadsPerVersion": "Downloads por versão",
+    "latestVersions": "Ultimas {num} versões",
+    "olderVersions": "Versões mais antigas",
+    "tryOlderVersions": "Se tiver problemas com a versão mais recente, elas podem não ocorrer em uma versão mais antiga. Pode tentar versões mais antigas aqui:"
+  },
+  "windowsSetup": {
+    "step2": "Ativar microfone",
+    "changeProperties": "Abra as propriedades do seu microfone, ative {listenToThisDevice} e selecione {cableInput} abaixo de {playbackThroughThisDevice}.",
+    "title": "Instalação no Windows",
+    "additionalSteps": "Etapas adicionais depois de instalar são requeridas para conseguir funcionar corretamente no Windows:",
+    "continue": "Continuar",
+    "finished": "Concluído",
+    "optional": "Opcional",
+    "step1": "Aparelhos de gravação",
+    "openRecordingDevices": "Abrir as configurações de aparelhos de gravação",
+    "listenToThisDevice": "Ouvir a este aparelho",
+    "playbackThroughThisDevice": "Tocar através deste aparelho",
+    "step3": "Melhorar qualidade",
+    "betterAudioQuality": "Para melhor qualidade de áudio, abra as propriedades do {cableOutput} e defina a taxa de amostragem para a mesma do seu microfone.",
+    "step4": "Selecione no Soundux",
+    "selectCableInput": "No Soundux, Selecione {cableInput} no na seleção superior esquerda"
+  },
+  "faq": {
+    "discordInputDevice": {
+      "neverAskAgain": "Não me pergunte de novo",
+      "question": "O Discord pergunta-me se quero mudar o meu aparelho de entrada, o que faço?",
+      "answer": "Clique no {neverAskAgain}"
+    },
+    "discordAudioQuality": {
+      "voiceAndVideo": "Voz e Vídeo",
+      "question": "Por que a qualidade de áudio no Discord é tão ruim?",
+      "answer": "Tente desativar {echoCancellation} e {noiseReduction} nas configurações do Discord, dentro de {voiceAndVideo}.",
+      "echoCancellation": "Cancelamento de eco",
+      "noiseReduction": "Redução de ruído"
+    },
+    "cantHearSounds": {
+      "question": "Não consigo ouvir os sons",
+      "answer": "Verifique se o o seu aparelho de saída de áudio padrão esta selecionado corretamente"
+    },
+    "passThroughFails": {
+      "answer": "Algumas aplicações usam OpenAl para áudio, o que pode prevenir isso. Para resolver este caso, crie um ficheiro nomeado {fileName} no seu diretório home contendo o seguinte:",
+      "question": "Fahlha quando tento fazer pass-through numa aplicação"
+    },
+    "title": "Perguntas frequentemente perguntadas"
   }
 }
