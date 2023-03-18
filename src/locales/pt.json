@@ -77,13 +77,13 @@
       "aurPage": "Visitar página do AUR",
       "debian": "Instalar Soundux no Debian",
       "debPackage": "via um pacote DEB",
-      "downloadDeb": "Baixar pacote DEB",
+      "downloadDeb": "Descarregar o pacote DEB",
       "ubuntu": "Instalar Soundux no Ubuntu",
       "pacstall": "via {pacstall}",
       "fedora": "Instalar Soundux no Fedora",
       "copr": "via {copr}",
       "rpmPackage": "via pacote RPM",
-      "downloadRpm": "Baixar pacote RPM"
+      "downloadRpm": "Descarregar o pacote RPM"
     },
     "failedToFetch": "Não foi possível obter informações do GitHub",
     "visitOurGitHub": "Visitar nossa página do GitHub",
@@ -93,7 +93,7 @@
     "differentFlavors": "Soundux é disponível em diferentes versões no seu sistema operativo.",
     "wrongOS": "Se o sistema operativo errado foi detectado, por favor mude-o no canto superior direito.",
     "changelog": "histórico de mudanças",
-    "downloadsPerVersion": "Downloads por versão",
+    "downloadsPerVersion": "Descargas por versão",
     "latestVersions": "Ultimas {num} versões",
     "olderVersions": "Versões mais antigas",
     "tryOlderVersions": "Se tiver problemas com a versão mais recente, elas podem não ocorrer em uma versão mais antiga. Pode tentar versões mais antigas aqui:"
