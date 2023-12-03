@@ -5,7 +5,8 @@
     "seeAllFeatures": "Zobacz wszystkie funkcje",
     "download": "Pobierz",
     "screenshots": "Zrzuty ekranu",
-    "nativeSupportFor": "Natywne wsparcie dla"
+    "nativeSupportFor": "Natywne wsparcie dla",
+    "universalArchitecture": "Dzięki uniwersalnej architekturze współpracuje z różnymi aplikacjami"
   },
   "features": {
     "title": "Cechy",
@@ -75,5 +76,66 @@
   },
   "input": {
     "ctrl": "CTRL"
+  },
+  "download": {
+    "linux": {
+      "pacstall": "Poprzez {pacstall}",
+      "downloadRpm": "Pobierz pakiet RPM",
+      "debian": "Zainstaluj Soundux na Debianie",
+      "debPackage": "Poprzez pakiet DEB",
+      "flatpak": "Dla wszystkich dystrybucji ze wsparciem Flatpak",
+      "aurPage": "Odwiedź stronę AUR",
+      "snap": "Dla wszystkich dystrybucji z wsparciem Snap",
+      "rpmPackage": "poprzez pakiet RPM",
+      "mpr": {
+        "documentation": "dokumentacja dla tego",
+        "title": "poprzez {mpr}",
+        "dependencies": "najpierw musisz zainstalować {makedeb} i {tap}. Zobacz {documentation}"
+      },
+      "downloadDeb": "Pobierz pakiet DEB",
+      "archLinux": "Zainstaluj Soundux z użyciem twojegu ulubionego pomocnika AUR",
+      "noAutomaticUpdates": "Bez automatycznych aktualizacji",
+      "ubuntu": "Zainstaluj Soundux na Ubuntu",
+      "fedora": "Zainstaluj Soundux na Fedorze",
+      "copr": "Poprzez {copr}"
+    },
+    "wrongOS": "Jeśli błędnie wykryto system operacyjny, proszę zmienić to w prawym górnym rogu.",
+    "failedToFetch": "Przeniesienie informacji z GitHub nie powiodło się",
+    "released": "Wydany",
+    "visitOurGitHub": "Odwiedź naszą stronę na GitHub",
+    "windows": {
+      "downloadPortable": "Pobierz wersję przenośną",
+      "additionalSteps": "Dodatkowe kroki instalacji",
+      "importantInformation": "Proszę kliknij przycisk poniżej albo obejrzyj film po ważne informacje o wsparciu systemu Windows",
+      "downloadSetup": "Pobierz instalkę",
+      "recommendSetup": "Zalecamy pobranie instalki ponieważ ona automatycznie pobiera wymagane pakiety (WebView2 Runtime and VB-Cable).",
+      "important": "Ważne!"
+    },
+    "downloadNow": "Pobierz Soundux teraz",
+    "olderVersions": "Starsze wersje",
+    "latestVersion": "Najnowsza wersja",
+    "downloadsPerVersion": "Pobierz odpowiednią wersje",
+    "changelog": "Lista zmian",
+    "differentFlavors": "Soundux jest oferowany jako różne wersje twojego systemu operacyjnego.",
+    "notSupported": "Soundux nie jest aktualnie wspierany na twoim systemie operacyjnym",
+    "tryOlderVersions": "Jeśli masz problem z najnowszą wersją mogą one nie występować w starszych wersjach. Tutaj możesz spróbować starsze wersje:",
+    "latestVersions": "Ostatnia {num} wersja"
+  },
+  "windowsSetup": {
+    "finished": "Zakończono",
+    "listenToThisDevice": "Słuchaj tego użądzenia",
+    "betterAudioQuality": "Dla lepszej jakości audio otwórz właściwości {cableOutput} i ustaw częstotliwość próbkowania na taką samą jak swojego mikrofonu.",
+    "selectCableInput": "W Soundux wybierz {cableInput} w wyborze w prawym górnym rogu",
+    "continue": "Kontynuuj",
+    "title": "Instalacja Windows",
+    "additionalSteps": "Dodatkowe kroki po instalacji wymagane dla prawidłowego działania na systemie Windows:",
+    "step2": "Włącz mikrofon",
+    "step3": "Popraw jakość",
+    "step4": "Wybierz w Soundux",
+    "changeProperties": "Otwórz właściwości twojego mokrofonu, włącz {listenToThisDevice} i wybierz {cableInput} pod {playbackThroughThisDevice}.",
+    "step1": "Użądzenia nagrywające",
+    "openRecordingDevices": "Otwórz ustawienia użądzeń nagrywających",
+    "playbackThroughThisDevice": "Odtwarzanie poprzez to użądzenie",
+    "optional": "Opcjonalne"
   }
 }
