@@ -1,7 +1,141 @@
 {
   "index": {
-    "download": "下載",
-    "screenshots": "截圖",
-    "seeAllFeatures": "查看所有功能"
+    "download": "下载",
+    "screenshots": "截图",
+    "seeAllFeatures": "查看所有功能",
+    "tagline": "一个跨平台的声音板",
+    "universalArchitecture": "它具有通用架构，因此适用于各种应用程序",
+    "andManyMore": "和更多",
+    "nativeSupportFor": "原生支持"
+  },
+  "input": {
+    "ctrl": "CTRL"
+  },
+  "screenshots": {
+    "hint": "在这里你可以看到当前版本的截图"
+  },
+  "features": {
+    "title": "功能",
+    "darkAndLightTheme": {
+      "title": "暗和亮主题",
+      "description": "选择你喜爱的主题"
+    },
+    "folderTabs": {
+      "title": "文件夹标签页",
+      "description": "你不需要添加单个声音。只需把它们放在一个文件夹中 📂并添加它为标签页。它会自动添加所有支持的音频格式🎧"
+    },
+    "clickToShowAdditionalInformation": "点击不同的功能以显示关于它们的额外信息",
+    "mediaControls": {
+      "title": "媒体控制",
+      "description": "我们为每个播放的声音提供了单独的媒体控制。你可以播放/暂停 ⏯、快进 🔼、重复 🔂 或停止 ⏹ 它们。"
+    },
+    "audioFormats": {
+      "title": "支持多种音频格式",
+      "description": "我们使用了 {miniaudio}，支持常见的音频格式，例如 mp3、wav、flac"
+    },
+    "soundSearch": {
+      "title": "声音搜索",
+      "description": "所有标签页的全局搜索",
+      "description2": "也可用 {ctrl} + {f} 打开"
+    },
+    "emulatedLaunchpad": {
+      "title": "模拟 Launchpad 模式",
+      "description": "一个在你的键盘上的模拟 Launchpad",
+      "description2": "按右上角所示的对应按键以播放声音",
+      "description3": "用你的方向键导航页面"
+    },
+    "globalHotkeys": {
+      "title": "全局热键",
+      "description": "你可以为每一个声音和停止所有声音设置热键。还有一个选项用于仅触发当前选择的标签页的热键"
+    },
+    "passThrough": {
+      "title": "应用程序透传",
+      "description": "应用程序透传允许你把任何应用的声音重定向到另一个应用。你可以使用它作为 Discord 的分享音频功能的变通方法",
+      "description2": "也可用 {ctrl} + {g} 打开"
+    }
+  },
+  "download": {
+    "downloadNow": "现在下载 Soundux",
+    "failedToFetch": "从 GitHub 获取信息失败",
+    "visitOurGitHub": "访问我们的 GitHub 页面",
+    "latestVersion": "最新版本",
+    "released": "释出于",
+    "notSupported": "Soundux 目前不支持你的操作系统",
+    "differentFlavors": "Soundux 为你的操作系统提供了不同的版本。",
+    "windows": {
+      "downloadSetup": "下载安装包",
+      "downloadPortable": "下载便携版",
+      "recommendSetup": "我们推荐你下载安装包，因为它会自动下载和安装必需的依赖（WebView2 运行时和 VB-Cable）。",
+      "important": "重要！",
+      "importantInformation": "请点击下面的按钮或观看视频获取关于 Windows 支持的重要信息",
+      "additionalSteps": "额外的设置步骤"
+    },
+    "linux": {
+      "noAutomaticUpdates": "不自动更新",
+      "downloadDeb": "下载 DEB 软件包",
+      "ubuntu": "在 Ubuntu 安装 Soundux",
+      "pacstall": "通过 {pacstall}",
+      "debPackage": "通过 DEB 软件包",
+      "mpr": {
+        "title": "通过 {mpr}",
+        "dependencies": "首先你需要安装 {makedeb} 和 {tap}。查看 {documentation}",
+        "documentation": "它的文档"
+      },
+      "fedora": "在 Fedora 安装 Soundux",
+      "copr": "通过 {copr}",
+      "rpmPackage": "通过 RPM 软件包",
+      "flatpak": "对于支持 Flatpak 的所有发行版",
+      "snap": "对于支持 Snap 的所有发行版",
+      "archLinux": "用你喜爱的 AUR 助手安装 Soundux",
+      "aurPage": "访问 AUR 页面",
+      "debian": "在 Debian 安装 Soundux",
+      "downloadRpm": "下载 RPM 软件包"
+    },
+    "downloadsPerVersion": "每个版本的下载数",
+    "latestVersions": "最新 {num} 个版本",
+    "olderVersions": "旧版本",
+    "tryOlderVersions": "如果你在使用最新版本时遇到问题，这些问题可能不会出现在旧版本中。你可以在此处试用旧版本：",
+    "wrongOS": "如果检测到错误的操作系统，请在右上角更改它。",
+    "changelog": "更改日志"
+  },
+  "windowsSetup": {
+    "title": "Windows 设置",
+    "additionalSteps": "安装后需要额外的步骤才能使它在 Windows 上正常工作：",
+    "continue": "继续",
+    "finished": "完成",
+    "optional": "可选",
+    "step1": "录制设备",
+    "openRecordingDevices": "打开录制设备设置",
+    "step2": "启用麦克风",
+    "changeProperties": "打开你的麦克风的属性，启用 {listenToThisDevice} 并在 {playbackThroughThisDevice} 下选择 {cableInput}。",
+    "listenToThisDevice": "侦听此设备",
+    "playbackThroughThisDevice": "通过此设备播放",
+    "step3": "改善质量",
+    "step4": "在 Soundux 中选择",
+    "selectCableInput": "在 Soundux 右上角选择 {cableInput}",
+    "betterAudioQuality": "为了更好的音频质量，打开 {cableOutput} 的属性并设置与麦克风相同的采样频率。"
+  },
+  "faq": {
+    "title": "常见问题",
+    "discordInputDevice": {
+      "question": "Discord 问我是否更改输入设备，怎么办？",
+      "answer": "点击 {neverAskAgain}",
+      "neverAskAgain": "不再询问"
+    },
+    "discordAudioQuality": {
+      "question": "为什么在 Discord 中音频质量那么差？",
+      "answer": "尝试在 Discord 的设置 {voiceAndVideo} 下禁用 {echoCancellation} 和 {noiseReduction}。",
+      "echoCancellation": "回音抵消",
+      "noiseReduction": "噪音抑制",
+      "voiceAndVideo": "语音和视频"
+    },
+    "cantHearSounds": {
+      "question": "我听不到声音",
+      "answer": "检查默认输出设备是否设置正确"
+    },
+    "passThroughFails": {
+      "question": "尝试透传一个应用程序失败",
+      "answer": "某些应用程序使用 OpenAL 传输音频，这可能会阻止这种情况。在主文件夹新建一个文件 {fileName}，写入以下内容："
+    }
   }
 }
