@@ -2,7 +2,7 @@
   "faq": {
     "passThroughFails": {
       "answer": "Ορισμένες εφαρμογές χρησιμοποιούν το OpenAL για ήχο, κάτι που μπορεί να το αποτρέψει. Για να το λύσετε, δημιουργήστε ένα αρχείο με όνομα {fileName} στον αρχικό σας φάκελο με τα ακόλουθα περιεχόμενα:",
-      "question": "Όταν προσπαθώ να διαβιβάσω μια εφαρμογή αποτυγχάνει"
+      "question": "Όταν προσπαθώ να περάσω μια εφαρμογή, αποτυγχάνει"
     },
     "cantHearSounds": {
       "answer": "Ελέγξτε εάν η προεπιλεγμένη συσκευή εξόδου έχει ρυθμιστεί σωστά",
@@ -29,9 +29,9 @@
     "step3": "Βελτίωση ποιότητας",
     "playbackThroughThisDevice": "Αναπαραγωγή μέσω αυτής της συσκευής",
     "listenToThisDevice": "Ακρόαση αυτής της συσκευής",
-    "changeProperties": "Ανοίξτε τις ιδιότητες του μικροφώνου σας, ενεργοποιήστε το {listenToThisDevice} και επιλέξτε {cableInput} κάτω από την {playbackThroughThisDevice}.",
+    "changeProperties": "Ανοίξτε τις ιδιότητες της φιλίας σας, επιτρέψτε {listen Προς το παρόν και επιλέξτε {cableInput} κάτω από {playbackThrough ThisDevice}.",
     "step2": "Ενεργοποίηση μικροφώνου",
-    "openRecordingDevices": "Ανοίξτε τις ρυθμίσεις συσκευών εγγραφής",
+    "openRecordingDevices": "Ανοίξτε τις ρυθμίσεις εγγραφής",
     "additionalSteps": "Απαιτούνται επιπλέον βήματα μετά την εγκατάσταση για να λειτουργήσει σωστά στα Windows:",
     "title": "Πρόγραμμα εγκατάστασης για Windows",
     "continue": "Συνέχεια",
@@ -55,7 +55,12 @@
       "downloadDeb": "Λήψη πακέτου DEB",
       "debPackage": "μέσω του πακέτου DEB",
       "debian": "Εγκατάσταση του Soundux σε Debian",
-      "aurPage": "Επισκεφθείτε την σελίδα μας στο AUR"
+      "aurPage": "Επισκεφθείτε την σελίδα μας στο AUR",
+      "mpr": {
+        "documentation": "τεκμηρίωση για αυτό",
+        "title": "μέσω {mpr}",
+        "dependencies": "Πρέπει να εγκαταστήσετε το {makedeb} και το {tap} πρώτα. Δείτε το {documentation}"
+      }
     },
     "windows": {
       "additionalSteps": "Πρόσθετα βήματα εγκατάστασης",
@@ -75,11 +80,12 @@
     "released": "Κυκλοφόρησε",
     "latestVersion": "Νεότερη έκδοση",
     "visitOurGitHub": "Επισκεφθείτε την σελίδα μας στο GitHub",
-    "downloadNow": "Κατεβάστε το Soundux τώρα"
+    "downloadNow": "Κατεβάστε το Soundux τώρα",
+    "differentFlavors": "Το Soundux προσφέρεται ως διαφορετικές γεύσεις για το λειτουργικό σας σύστημα."
   },
   "features": {
     "passThrough": {
-      "title": "Διαβίβαση εφαρμογών",
+      "title": "Εφαρμογή pass-through",
       "description": "Η διαβίβαση εφαρμογών σάς επιτρέπει να ανακατευθύνετε τον ήχο οποιασδήποτε εφαρμογής σε άλλη. Μπορείτε να το χρησιμοποιήσετε ως λύση για την λειτουργία κοινής χρήσης ήχου του Discord",
       "description2": "Μπορεί επίσης να ανοίξει με το {ctrl} + {g}"
     },
@@ -108,7 +114,8 @@
       "title": "Καθολικές συντομεύσεις"
     },
     "darkAndLightTheme": {
-      "title": "Σκούρο και λευκό θέμα"
+      "title": "Σκούρο και λευκό θέμα",
+      "description": "Επιλέξτε το δηλητήριο σας"
     },
     "title": "Χαρακτηριστικά",
     "audioFormats": {
@@ -122,7 +129,8 @@
     "screenshots": "Στιγμιότυπα",
     "seeAllFeatures": "Δείτε όλα τα χαρακτηριστικά",
     "andManyMore": "Και πολλά άλλα",
-    "download": "Λήψη"
+    "download": "Λήψη",
+    "tagline": "Ένα cross-platform soundboard"
   },
   "screenshots": {
     "hint": "Εδώ μπορείτε να δείτε στιγμιότυπα από την τωρινή έκδοση"
