@@ -2,6 +2,140 @@
   "index": {
     "download": "Letöltés",
     "andManyMore": "És így tovább",
-    "seeAllFeatures": "Tekindsd meg az összes funkciót"
+    "seeAllFeatures": "Tekindsd meg az összes funkciót",
+    "tagline": "Egy platformfüggetlen soundboard",
+    "universalArchitecture": "Egy univerzális arhitekrúra miatt rengeteg alkalmazással működik",
+    "nativeSupportFor": "Natív támogatás van",
+    "screenshots": "Képernyőfotók"
+  },
+  "input": {
+    "ctrl": "CTRL"
+  },
+  "features": {
+    "darkAndLightTheme": {
+      "title": "Sötét és világos téma",
+      "description": "Méreg kiválasztása"
+    },
+    "title": "Jellemzők",
+    "mediaControls": {
+      "title": "Média kezelés",
+      "description": "Minden hanghoz egyesével kezelhető beállítások vannak. Elindíthatja és megállíthajta ⏯, felfüggesztheti 🔼, ismételheti 🔂, vagy megállíthatja ⏹ azokat."
+    },
+    "clickToShowAdditionalInformation": "Kattintson a különböző jellemzőkre további információért",
+    "folderTabs": {
+      "title": "Mappa ablak",
+      "description": "Nem kell a hangokat egyesével betallóznia! Csak rakja őket egy mappába 📂 és tallózza be azt, a támogatott hangokat automatikusan kezeli a program:)"
+    },
+    "audioFormats": {
+      "title": "Több fajta audió formátum támogatás",
+      "description": "A {miniaudio} használatával támogatottak az ismert audió formátumok (mp3, wav, flac)"
+    },
+    "soundSearch": {
+      "title": "Hang keresése",
+      "description": "Minden ablakban keresés",
+      "description2": "Megnyitható a {ctrl} + {f} billentyűkombinációval"
+    },
+    "emulatedLaunchpad": {
+      "title": "Emulált indító mód",
+      "description": "Emulált indító a billentyűzeten",
+      "description2": "Nyomja meg a hanghoz tartozó billentyűt (job felső sarokban látható) a lejátszáshoz",
+      "description3": "Navigáljon a lapok között a billentyűzet nyíl billentyűivel"
+    },
+    "globalHotkeys": {
+      "title": "Univerzális gyorsgombok",
+      "description": "Megnézheti a gyorsgombokat a hangok egyenkénti, vagy összes hang megálíltásához is"
+    },
+    "passThrough": {
+      "title": "Alkalmazás továbbengedés",
+      "description": "Az alkalamzás továbbengedés miatt lehetséges, hogy bármelyik alkalmazás hangját átirányítsa egy másikba. Használható trükk a Discord hangmegosztás funkcióhoz",
+      "description2": "Megnyitható a {ctrl} + {g} billentyűkombinációval"
+    }
+  },
+  "screenshots": {
+    "hint": "Itt találhatók képernyőfotók a jelenlegi verzióról"
+  },
+  "download": {
+    "downloadNow": "Soundux letöltése",
+    "failedToFetch": "Nem sikerült lekérni az adatokkat GitHubról",
+    "visitOurGitHub": "Látogassa meg a GitHub oldalunkat",
+    "latestVersion": "Legújabb verzió",
+    "released": "Kiadott",
+    "notSupported": "A Soundux jelenleg nem támogatott az ön operációs rendszerén",
+    "differentFlavors": "A Soundux személyre szabottan érkezik az operációs rendszertől függően",
+    "wrongOS": "Ha hibásan érzékeltük az operációs rendszert, kérjük módosítsa a jobb felső sarokban.",
+    "windows": {
+      "downloadSetup": "Telepítő letöltése",
+      "downloadPortable": "Hordozható verzió letöltése",
+      "recommendSetup": "Javasolt a telepítő letöltése, mivel az automatikusan letölti és bweállítja az alkalmazás futásához szükséges függőségeket (WebView2 Runtime és VB-Cable).",
+      "important": "Figyelem!",
+      "importantInformation": "Kérem kattintson a gombra, vagy nézze meg a videót a Windows támogatásról szóló fontos információkért",
+      "additionalSteps": "További telepítő beállítások"
+    },
+    "linux": {
+      "noAutomaticUpdates": "nincs automatikus frissítés",
+      "flatpak": "Minden disztróhoz használható a Flatpak",
+      "snap": "Minden disztróhoz használható a Snap",
+      "archLinux": "A Soundux telepítése a kedvenc AUR segítővel",
+      "aurPage": "AUR megnyitása",
+      "debian": "Soundux telepítése a Debian alapú rendszereken",
+      "debPackage": "DEB csomaggal",
+      "downloadDeb": "DEB csomag letöltése",
+      "ubuntu": "Soundux telepítése Ubuntu, vagy Ubuntu alapú rendszerekre",
+      "pacstall": "a {pacstall} használatával",
+      "mpr": {
+        "title": "az {mpr} használatával",
+        "dependencies": "A telepítéshez elösször telepíteni kell az alábbiakat: {makedeb}, {tap}. Tekintse meg a {documentation}",
+        "documentation": "dokumentációt hozzá"
+      },
+      "fedora": "Soundux telepítése Fedora-ra",
+      "copr": "a {copr} használatával",
+      "rpmPackage": "RPM csomag használatával",
+      "downloadRpm": "RPM csomag letöltése"
+    },
+    "changelog": "Frissítési napló",
+    "downloadsPerVersion": "Verziónkénti letöltés",
+    "latestVersions": "A legújabb {num} verziók",
+    "olderVersions": "Régebbi verziók",
+    "tryOlderVersions": "Amennyiben problémái adódnak a legfrissebb verzióval érdemes lehet megpróbálni régebbi verzókat, melyek elérhetők itt:"
+  },
+  "windowsSetup": {
+    "title": "Windows telepítő",
+    "additionalSteps": "További műveletek szükségesek az alklamazás megfelelő telepítéséhez Windowson:",
+    "continue": "Folytatás",
+    "finished": "Kész",
+    "optional": "Opcionális",
+    "step1": "Bejövő eszközök",
+    "openRecordingDevices": "Nyissa meg a bejovő hang beállításait a beállításokban",
+    "step2": "Mikrofon engedélyezése",
+    "changeProperties": "Tulajdonságok megnyitása a mikrofonhoz, engedélyezze az ere az eszközre hallgatást és válaszza ki a megfelelő kábelbemenetet a {playbackThroughThisDevice} alatt.",
+    "listenToThisDevice": "Erre az eszközre hallgatás",
+    "playbackThroughThisDevice": "Visszajátszás ezen az eszközön",
+    "step3": "Minőség javítása",
+    "betterAudioQuality": "Jobb hangzáslrt nyissa meg a {cableOutput} tulajdonságait és növelje meg a mintavételi rátát a mikrofonnal megegyező szintre.",
+    "step4": "Soundux-ban választás",
+    "selectCableInput": "A Sounduxban válassza ki a {cableInput}-ot a jobb felső sarokban"
+  },
+  "faq": {
+    "title": "GYIK",
+    "discordInputDevice": {
+      "question": "A Discord megkérdezte, hogy cserélem-e a bemeneti eszközt. Mit csináljak?",
+      "answer": "Kattintson erre: {neverAskAgain}",
+      "neverAskAgain": "Soha ne kérdezze meg"
+    },
+    "discordAudioQuality": {
+      "question": "Miért ennyire rossz a minőség Discordon?",
+      "answer": "Próbálja meg kikapcsolni a visszhangcsökkentést és a zajszűrést a Discord hangbeállításaiban.",
+      "echoCancellation": "Viszhangcsökkentés",
+      "noiseReduction": "Zajszűrés",
+      "voiceAndVideo": "Hang és videó"
+    },
+    "cantHearSounds": {
+      "question": "Nem hallom a hangokat",
+      "answer": "Ellenőrizze, hogy az alapértelmezett kimeneti eszköz helyesen van-e beállítva"
+    },
+    "passThroughFails": {
+      "question": "Mikor megpróbálok továbbengedni, az alkalmazás összeomlik",
+      "answer": "Néhány alkalmazás OpenAL-t használ ami megakadályozhatja ezt. A megoldáshoz készítsen egy fájlt {fileName} névvel a felhasználói mappába. A fájl tartalmazza az alábbiakat:"
+    }
   }
 }
